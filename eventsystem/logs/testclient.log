@@ -1,0 +1,15 @@
+2021-10-12 09:48:29,620 -  _____         _      ____ _ _            _   
+|_   _|__  ___| |_   / ___| (_) ___ _ __ | |_ 
+  | |/ _ \/ __| __| | |   | | |/ _ \ '_ \| __|
+  | |  __/\__ \ |_  | |___| | |  __/ | | | |_ 
+  |_|\___||___/\__|  \____|_|_|\___|_| |_|\__|
+                                              
+
+2021-10-12 09:48:29,631 - Connecting to the websocket server
+2021-10-12 09:48:29,666 - Connected and running
+2021-10-12 09:48:29,693 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-10-12 09:48:29,703 - "{\"event_type\": \"ACK\", \"event_ts\": \"2021-10-12T09:48:29.684041\", \"client_id\": \"4689f355-265c-4b7a-bf51-35510d928d32\", \"payload\": {\"ackmessage\": \"Client Registered successfully...\", \"status\": 100}}"
+2021-10-12 09:48:29,725 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-10-12 09:48:29,725 - "{\"feeds\": \"{\\\"ticker\\\": \\\"ICICIBANK\\\", \\\"period\\\": \\\"5T\\\", \\\"start_date\\\": \\\"2021-01-01 09:00:00\\\", \\\"type\\\": \\\"candles\\\"}\", \"indicators\": \"\\\"None\\\"\"}"
+2021-10-12 09:48:49,667 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-10-12 09:48:49,676 - {"event_type": "ACK", "event_ts": "2021-10-12T09:48:49.658867", "client_id": "4689f355-265c-4b7a-bf51-35510d928d32", "payload": {"client_id": "4689f355-265c-4b7a-bf51-35510d928d32", "event_type": "keepalive"}}
