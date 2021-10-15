@@ -25,7 +25,8 @@ class MapRouter():
 
     def get_destination_contract(self,contract,id):
         "Parse the incoming message and find the next destination based on the route map"
-        contract_obj = contract
+        contract_obj = json.loads(json.dumps(contract))
+        print(contract_obj)
         requesttype = contract_obj['event_type']
         client_id = contract_obj['client_id']
         track_id = id

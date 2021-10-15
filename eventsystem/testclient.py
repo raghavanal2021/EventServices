@@ -38,6 +38,8 @@ class TestClient():
             self.ws.write_message(json.dumps(metadata))
             dict = {"event_type":"stgy_request", "event_producer":"Strategy1","client_id":self.client_id, "payload": {"feeds":{"ticker":"ICICIBANK","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
             self.ws.write_message(json.dumps(dict))
+            dict = {"event_type":"stgy_request", "event_producer":"Strategy2","client_id":self.client_id, "payload": {"feeds":{"ticker":"MOTHERSUMI","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
+            self.ws.write_message(json.dumps(dict))
         except Exception as e:
             logging.error(e)
         else:
@@ -46,7 +48,7 @@ class TestClient():
 
     @gen.coroutine
     def run(self):
-        while True:
+        while True: 
             msg = yield self.ws.read_message()
             if msg is None:
                 logging.info("Connection closed")

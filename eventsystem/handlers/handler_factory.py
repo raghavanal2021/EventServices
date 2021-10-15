@@ -11,4 +11,5 @@ class HandlerFactory():
         if (request_params == "stgy_request"):
             return StrategyRequestHandler().process(contract=contract)
             
-        
+        if (request_params == "data"):
+            print(contract)

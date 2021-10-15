@@ -1,270 +1,44 @@
-INFO : root -2021-10-12 22:51:34,924 - Router class initialized
-INFO : root -2021-10-12 22:51:34,924 - Getting routes from the file {"stgy_request": ["feeds","indicators"]}
-INFO : root -2021-10-12 22:51:34,925 - Metadata Request is running...
-INFO : root -2021-10-12 22:51:34,929 - Keep Alive Handler running
-INFO : root -2021-10-12 22:51:36,133 -  _____                 _     ____             _    _                      
+INFO : root -2021-10-15 18:44:51,456 - Router class initialized
+INFO : root -2021-10-15 18:44:51,456 - Getting routes from the file {"stgy_request": ["feeds","indicators"],"data":["test"]}
+INFO : root -2021-10-15 18:44:51,456 - Metadata Request is running...
+INFO : root -2021-10-15 18:44:51,456 - Keep Alive Handler running
+INFO : root -2021-10-15 18:44:51,987 -  _____                 _     ____             _    _                      
 | ____|_   _____ _ __ | |_  | __ )  __ _  ___| | _| |__   ___  _ __   ___ 
 |  _| \ \ / / _ \ '_ \| __| |  _ \ / _` |/ __| |/ / '_ \ / _ \| '_ \ / _ \
 | |___ \ V /  __/ | | | |_  | |_) | (_| | (__|   <| |_) | (_) | | | |  __/
 |_____| \_/ \___|_| |_|\__| |____/ \__,_|\___|_|\_\_.__/ \___/|_| |_|\___|
                                                                           
 
-INFO : root -2021-10-12 22:51:36,133 - Event Backbone initialized
-INFO : tornado.access -2021-10-12 22:51:42,011 - 101 GET /eventsocket (::1) 3.00ms
-INFO : root -2021-10-12 22:51:42,011 - Connection Opened. Getting the metadata
-INFO : root -2021-10-12 22:51:42,023 - {"event_type": "metadata", "event_producer": "Feed Listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "client_name": "Feed Listener"}}
-INFO : root -2021-10-12 22:51:42,055 - Loaded the Client information to Database..
-INFO : root -2021-10-12 22:51:42,159 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 Connected Feed Listener.Tracking ID is 6ded49e0-d34d-432f-a420-71558b2ef0bf
-INFO : root -2021-10-12 22:52:02,005 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:52:02,006 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:52:02,007 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:52:02.006461', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:52:22,001 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:52:22,001 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:52:22,001 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:52:22.001033', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:52:42,003 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:52:42,004 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:52:42,004 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:52:42.004915', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:53:01,993 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:53:01,994 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:53:01,994 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:53:01.994565', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:53:21,992 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:53:21,992 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:53:21,993 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:53:21.993034', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:53:42,006 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:53:42,006 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:53:42,006 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:53:42.006869', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:54:01,993 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:54:01,993 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:54:01,993 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:54:01.993698', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:54:22,000 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:54:22,001 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:54:22,002 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:54:22.002592', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:54:41,995 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:54:41,995 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:54:41,996 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:54:41.996305', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:55:01,993 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:55:01,994 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:55:01,995 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:55:01.995177', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:55:21,986 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:55:21,987 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:55:21,988 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:55:21.987338', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:55:42,006 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:55:42,006 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:55:42,006 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:55:42.006550', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:56:01,998 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:56:01,999 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:56:02,001 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:56:01.999097', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:56:21,987 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:56:21,987 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:56:21,987 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:56:21.987887', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:56:42,004 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:56:42,007 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:56:42,009 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:56:42.008576', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:57:02,003 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:57:02,004 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:57:02,004 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:57:02.004303', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:57:22,003 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:57:22,003 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:57:22,003 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:57:22.003958', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:57:41,996 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:57:41,998 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:57:41,999 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:57:41.999353', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:58:02,003 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:58:02,003 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:58:02,004 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:58:02.004804', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:58:21,996 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:58:21,996 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:58:21,997 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:58:21.997987', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:58:41,989 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:58:41,989 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:58:41,989 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:58:41.989491', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:59:01,999 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:59:02,000 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:59:02,000 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:59:02.000432', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:59:21,998 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:59:21,999 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:59:21,999 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:59:21.999735', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 22:59:41,983 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 22:59:41,983 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 22:59:41,983 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T22:59:41.983051', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:00:01,981 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:00:01,982 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:00:01,983 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:00:01.983007', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:00:21,991 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:00:21,993 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:00:21,993 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:00:21.993537', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:00:42,001 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:00:42,002 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:00:42,002 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:00:42.002234', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:01:01,991 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:01:01,992 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:01:01,993 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:01:01.993593', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:01:21,982 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:01:21,982 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:01:21,983 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:01:21.982948', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:01:41,984 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:01:41,984 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:01:41,984 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:01:41.984315', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:02:02,001 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:02:02,003 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:02:02,003 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:02:02.003004', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:02:22,002 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:02:22,002 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:02:22,003 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:02:22.003566', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:02:42,003 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:02:42,003 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:02:42,004 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:02:42.003961', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:03:02,007 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:03:02,008 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:03:02,008 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:03:02.008430', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:03:21,996 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:03:21,996 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:03:21,997 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:03:21.997250', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:03:41,980 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:03:41,980 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:03:41,981 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:03:41.981556', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:04:01,981 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:04:01,981 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:04:01,981 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:04:01.981911', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:04:21,980 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:04:21,980 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:04:21,980 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:04:21.980427', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:04:41,983 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:04:41,984 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:04:41,984 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:04:41.984641', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:05:01,980 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:05:01,980 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:05:01,980 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:05:01.980392', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:05:21,980 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:05:21,980 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:05:21,981 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:05:21.981573', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:05:41,979 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:05:41,979 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:05:41,979 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:05:41.979793', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:06:01,986 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:06:01,986 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:06:01,986 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:06:01.986170', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:06:22,001 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:06:22,001 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:06:22,002 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:06:22.002161', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:06:42,005 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:06:42,006 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:06:42,007 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:06:42.007243', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:07:01,984 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:07:01,985 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:07:01,985 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:07:01.985180', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:07:21,991 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:07:21,991 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:07:21,992 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:07:21.991252', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:07:41,998 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:07:41,998 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:07:41,998 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:07:41.998334', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:08:01,983 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:08:01,983 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:08:01,983 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:08:01.983867', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:08:21,992 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:08:21,992 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:08:21,992 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:08:21.992359', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:08:41,993 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:08:41,993 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:08:41,994 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:08:41.994055', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:09:01,990 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:09:01,991 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:09:01,991 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:09:01.991604', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:09:22,005 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:09:22,005 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:09:22,005 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:09:22.005471', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:09:41,993 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:09:41,993 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:09:41,993 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:09:41.993312', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:10:02,007 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:10:02,007 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:10:02,008 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:10:02.008196', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:10:21,999 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:10:21,999 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:10:22,000 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:10:22.000622', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:10:41,983 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:10:41,983 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:10:41,984 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:10:41.984487', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:11:01,985 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:11:01,985 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:11:01,986 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:11:01.986930', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:11:21,996 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:11:21,997 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:11:21,997 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:11:21.997550', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:11:41,991 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:11:41,991 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:11:41,992 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:11:41.992933', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:12:02,006 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:12:02,007 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:12:02,007 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:12:02.007467', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:12:21,998 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:12:21,998 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:12:21,999 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:12:21.999682', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:12:41,977 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:12:41,978 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:12:41,978 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:12:41.978316', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:13:01,987 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:13:01,987 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:13:01,987 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:13:01.987412', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:13:21,995 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:13:21,995 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:13:21,995 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:13:21.995946', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:13:41,982 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:13:41,982 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:13:41,982 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:13:41.982739', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:14:01,986 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:14:01,986 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:14:01,987 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:14:01.987558', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:14:21,998 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:14:21,999 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:14:21,999 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:14:21.999715', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:14:41,980 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:14:41,981 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:14:41,981 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:14:41.981406', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:15:01,989 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:15:01,989 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:15:01,990 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:15:01.989875', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:15:22,004 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:15:22,005 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:15:22,005 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:15:22.005122', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:15:42,005 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:15:42,006 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:15:42,007 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:15:42.007060', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:16:01,997 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:16:01,998 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:16:01,998 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:16:01.998552', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:16:21,989 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:16:21,989 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:16:21,990 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:16:21.990420', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:16:41,995 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:16:41,996 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:16:41,996 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:16:41.996769', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:17:01,987 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:17:01,989 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:17:01,989 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:17:01.989151', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:17:22,006 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:17:22,007 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:17:22,007 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:17:22.007476', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:17:41,988 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:17:41,989 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:17:41,989 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:17:41.989407', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:18:02,002 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:18:02,002 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:18:02,002 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:18:02.002388', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:18:22,000 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:18:22,000 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:18:22,000 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:18:22.000830', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:18:41,998 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:18:41,999 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:18:41,999 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:18:41.999835', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:19:01,987 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:19:01,988 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:19:01,988 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:19:01.988632', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:19:21,991 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:19:21,992 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:19:21,992 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:19:21.992379', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:19:41,995 - {"event_type": "keep_alive", "event_producer": "Feed_listener", "client_id": "43d09d33-bf75-4ac3-b85b-411296c6c3c9", "payload": {"type": "keepalive"}}
-INFO : root -2021-10-12 23:19:41,995 - 43d09d33-bf75-4ac3-b85b-411296c6c3c9 sent a keep alive signal
-INFO : root -2021-10-12 23:19:41,996 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-12T23:19:41.996502', 'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'payload': {'client_id': '43d09d33-bf75-4ac3-b85b-411296c6c3c9', 'event_type': 'keepalive'}}
-INFO : root -2021-10-12 23:19:45,665 - Deleted the disconnected client 6ded49e0-d34d-432f-a420-71558b2ef0bf
+INFO : root -2021-10-15 18:44:51,987 - Event Backbone initialized
+INFO : tornado.access -2021-10-15 18:45:01,901 - 101 GET /eventsocket (::1) 0.00ms
+INFO : root -2021-10-15 18:45:01,901 - Connection Opened. Getting the metadata
+INFO : root -2021-10-15 18:45:01,901 - {"event_type": "metadata", "event_producer": "Strategy1", "client_id": "93abd58d-d23c-44e7-a01e-800cbf378ce9", "payload": {"client_id": "93abd58d-d23c-44e7-a01e-800cbf378ce9", "client_name": "Strategy1"}}
+INFO : root -2021-10-15 18:45:01,936 - Loaded the Client information to Database..
+INFO : root -2021-10-15 18:45:01,949 - 93abd58d-d23c-44e7-a01e-800cbf378ce9 Connected Strategy1.Tracking ID is 9d005f01-63d0-41e7-95f1-0ac22267f6ea
+INFO : root -2021-10-15 18:45:01,950 - {"event_type": "stgy_request", "event_producer": "Strategy1", "client_id": "93abd58d-d23c-44e7-a01e-800cbf378ce9", "payload": {"feeds": {"ticker": "ICICIBANK", "period": "5T", "start_date": "2021-01-01 09:00:00", "type": "candles"}, "indicators": "None"}}
+INFO : root -2021-10-15 18:45:01,951 - Calling Factory for the event stgy_request
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,955 - Pika version 1.2.0 connecting to ('::1', 5672, 0, 0)
+INFO : pika.adapters.utils.io_services_utils -2021-10-15 18:45:01,957 - Socket connected: <socket.socket fd=1248, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54503, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,958 - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E79DCE20>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E79DCE20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,963 - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E79DCE20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,963 - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E79DCE20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO : pika.adapters.blocking_connection -2021-10-15 18:45:01,963 - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E79DCE20> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO : pika.adapters.blocking_connection -2021-10-15 18:45:01,963 - Created channel=1
+INFO : root -2021-10-15 18:45:01,963 - Started to Handle the Strategy Request
+INFO : root -2021-10-15 18:45:01,963 - Published to the event
+INFO : root -2021-10-15 18:45:01,975 - 93abd58d-d23c-44e7-a01e-800cbf378ce9 Connected Strategy1.Tracking ID is 9d005f01-63d0-41e7-95f1-0ac22267f6ea
+INFO : root -2021-10-15 18:45:01,976 - {"event_type": "stgy_request", "event_producer": "Strategy2", "client_id": "93abd58d-d23c-44e7-a01e-800cbf378ce9", "payload": {"feeds": {"ticker": "MOTHERSUMI", "period": "5T", "start_date": "2021-01-01 09:00:00", "type": "candles"}, "indicators": "None"}}
+INFO : root -2021-10-15 18:45:01,977 - Calling Factory for the event stgy_request
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,982 - Pika version 1.2.0 connecting to ('::1', 5672, 0, 0)
+INFO : pika.adapters.utils.io_services_utils -2021-10-15 18:45:01,983 - Socket connected: <socket.socket fd=1272, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 54506, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,984 - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E7B52C40>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E7B52C40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,986 - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E7B52C40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO : pika.adapters.utils.connection_workflow -2021-10-15 18:45:01,986 - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E7B52C40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO : pika.adapters.blocking_connection -2021-10-15 18:45:01,986 - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C2E7B52C40> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO : pika.adapters.blocking_connection -2021-10-15 18:45:01,986 - Created channel=1
+INFO : root -2021-10-15 18:45:01,986 - Started to Handle the Strategy Request
+INFO : root -2021-10-15 18:45:01,994 - Published to the event
+INFO : root -2021-10-15 18:45:02,001 - 93abd58d-d23c-44e7-a01e-800cbf378ce9 Connected Strategy1.Tracking ID is 9d005f01-63d0-41e7-95f1-0ac22267f6ea
+INFO : root -2021-10-15 18:45:21,894 - {"event_type": "keep_alive", "event_producer": "Strategy1", "client_id": "93abd58d-d23c-44e7-a01e-800cbf378ce9", "payload": {"type": "keepalive"}}
+INFO : root -2021-10-15 18:45:21,895 - 93abd58d-d23c-44e7-a01e-800cbf378ce9 sent a keep alive signal
+INFO : root -2021-10-15 18:45:21,895 - Contract {'event_type': 'ACK', 'event_ts': '2021-10-15T18:45:21.895306', 'client_id': '93abd58d-d23c-44e7-a01e-800cbf378ce9', 'payload': {'client_id': '93abd58d-d23c-44e7-a01e-800cbf378ce9', 'event_type': 'keepalive'}}

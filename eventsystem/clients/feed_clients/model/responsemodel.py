@@ -1,13 +1,11 @@
 "Request Model"
-import json
 
-from datetime import datetime
-class RequestModel():
+class ResponseModel():
     "create, Gets and Sets the Response Model"
 
     def __init__(self):
         self._event_type = None
-        self._event_ts = str(datetime.now().isoformat())
+        self._event_ts = None
         self._client_id = None
         self._payload = ""
 
@@ -15,7 +13,7 @@ class RequestModel():
         self._event_type = event_type
 
     def set_event_ts(self,event_ts):
-        self._event_ts = str(datetime.now().isoformat())
+        self._event_ts = event_ts
 
     def set_payload(self,payload):
         self._payload = payload

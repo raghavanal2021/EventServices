@@ -1,5 +1,6 @@
 "This is the feeder client and listens for the strategy request"
 
+import asyncio
 import logging
 import pyfiglet
 import os,uuid,json
@@ -7,7 +8,7 @@ from tornado.ioloop import IOLoop, PeriodicCallback
 from tornado import gen
 from tornado.websocket import websocket_connect
 
-logging.basicConfig(filename="../logs/feed_listener.log",level=logging.INFO,filemode='w',
+logging.basicConfig(filename="../feed_clients/logs/feed_subscriber.log",level=logging.INFO,filemode='w',
                     format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
 class FeedListener():
     "Feed Listener Class which listens and publishes feed event to the Event Backbone"
@@ -25,8 +26,9 @@ class FeedListener():
         self.ws = None
         self.connect()
         PeriodicCallback(self.keep_alive,20000).start()
-        self.ioloop.start()
-
+        
+        
+        
     @gen.coroutine
     def connect(self):
         "Connect to the WebSocket server"
@@ -45,6 +47,18 @@ class FeedListener():
             self.run()
 
     @gen.coroutine
+    def get_client_id(self):
+        return self.client_id
+
+    @gen.coroutine
+    def publish_message(self,contract):
+        self.ws.write_message(json.dumps(contract))
+    
+    @gen.coroutine
+    def start_loop(self):
+        self.ioloop.start()
+    
+    @gen.coroutine
     def run(self):
         while True:
             msg = yield self.ws.read_message()
@@ -54,6 +68,9 @@ class FeedListener():
                 break
             else:
                 logging.info(msg)
+                contract = json.loads(msg)
+                
+            #    FeedSubscriber()
 
 
     def keep_alive(self):
@@ -64,5 +81,6 @@ class FeedListener():
             self.ws.write_message(json.dumps(dict))
 
 
-if __name__ == '__main__':
-    client = FeedListener("ws://localhost:8888/eventsocket",5)
+    
+#if __name__ == '__main__':
+ #   client = FeedListener("ws://localhost:8888/eventsocket",5)
