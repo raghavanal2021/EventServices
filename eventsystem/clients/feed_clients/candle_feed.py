@@ -27,7 +27,7 @@ class CandleFeed():
         except Exception as e:
             logging.error(f"Error Connecting to MongoDB {e}")
 
-    async def get_feed(self,start_date,period,ticker,client_id):
+    def get_feed(self,start_date,period,ticker,client_id):
         self._mongo_coll = self.mongo_db[ticker]
         startdate = datetime.strptime(start_date,"%Y-%m-%d %H:%M:%S")
         enddate = timedelta(days=1) + startdate

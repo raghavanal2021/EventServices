@@ -14,14 +14,13 @@ class MessageRouter():
         self._candlefeed = CandleFeed()
         logging.info("Started to route the message request to the message handler")
         self.output_listener = FeedListener("ws://localhost:8888/eventsocket",5)
-        
-    #async def start_listener(self):
-     #    asyncio.run(self.output_listener.start_loop())
+        self.subscribers = set()
 
-    async def route_message(self,contract):
+    def route_message(self,contract):
         #contract_json = json.dumps(str(contract.decode('utf-8')))
         #print(contract_json)
         print(contract.decode('utf-8'))
+        #self.register(contract)
         contract_obj = json.loads(contract.decode('utf-8'))
         print(contract_obj)
         _event_type = contract_obj["event_type"]
@@ -35,9 +34,9 @@ class MessageRouter():
        # client_id = contract_obj['client_id']
         if type == 'candles':
             logging.info(f"Identified the type as {type} and calling the {type} feed")
-            _outputfeed = await self._candlefeed.get_feed(start_date=start_date,period=period,ticker=ticker,client_id="")
+            _outputfeed = self._candlefeed.get_feed(start_date=start_date,period=period,ticker=ticker,client_id="")
             for feeds in _outputfeed:
                 print(json.dumps(feeds))
                 self.output_listener.publish_message(feeds)
                 time.sleep(1)
-        return None
+        return "Success"

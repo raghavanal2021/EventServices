@@ -4,15 +4,20 @@ import logging
 import os
 import asyncio
 import aio_pika
-from aio_pika.pool import Pool
+from aio_pika.pool import T, Pool
 from aio_pika.robust_connection import connect_robust
 from dotenv import load_dotenv
-from message_observable import MessageObservable
+from router import MessageRouter
+from message_subscriber import MessageSubscriber
 import pyfiglet
+import threading
 
 logging.basicConfig(filename="../feed_clients/logs/feed_subscriber.log",level=logging.INFO,filemode='w',
                     format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
 load_dotenv()
+
+
+message_threads = []
 
 async def main(loop):
     rabbit_url = os.getenv("rabbiturl")
@@ -39,17 +44,23 @@ async def main(loop):
         logging.info("Queue Binding Successful")
     except Exception as e:
         logging.error(f"Unable to create channel or bind to the queue {e}")
-    messagerouter = MessageObservable()
-    incoming_message_list = []
+    
     "Receive the message"
     while True:
             try:
                 incoming_message = await queue.get(timeout=5)
                 message = incoming_message.body
                 incoming_message.ack() 
-                await messagerouter.dispatch(message)
+                startThread(message)
             except asyncio.QueueEmpty:
                 pass
+def startThread(message):
+      print("Starting Thread")
+      messagerouter = MessageRouter()
+      t = threading.Thread(target=messagerouter.route_message,args=[message],daemon=True)
+      message_threads.append(t) 
+      t.start()
+      
 
 if __name__ == '__main__':
         ascii_banner = pyfiglet.figlet_format("Feed Subscriber")

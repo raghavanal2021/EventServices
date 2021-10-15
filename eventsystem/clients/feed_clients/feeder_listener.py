@@ -6,6 +6,7 @@ import pyfiglet
 import os,uuid,json
 from tornado.ioloop import IOLoop, PeriodicCallback
 from tornado import gen
+from tornado.platform.asyncio import AnyThreadEventLoopPolicy
 from tornado.websocket import websocket_connect
 
 logging.basicConfig(filename="../feed_clients/logs/feed_subscriber.log",level=logging.INFO,filemode='w',
@@ -22,11 +23,12 @@ class FeedListener():
         logging.info(ascii_banner)
         self.url = url
         self.timeout = timeout
-        self.ioloop = IOLoop.instance()
         self.ws = None
+        self.ioloop = IOLoop.current()
         self.connect()
         PeriodicCallback(self.keep_alive,20000).start()
-        
+        asyncio.set_event_loop_policy(AnyThreadEventLoopPolicy())
+
         
         
     @gen.coroutine
