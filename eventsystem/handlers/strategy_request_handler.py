@@ -23,17 +23,19 @@ class StrategyRequestHandler(HandlerInterface):
         payload = parse_contract['payload']
         print(f"Contract is {contract}")
         print(f"Payload is {payload}")
+        "Get the Feed Contract Model"
         self._feed_contract_model = RequestModel()
-        self._indicators_contract_model = RequestModel()
         self._feed_contract_model.client_id = client_id
-        self._indicators_contract_model.client_id = client_id
-        #self._contract_model.event_ts = parse_contract['event_ts']
         self._feed_contract_model.event_type = 'data'
-        self._indicators_contract_model.event_type = 'data'
         self._feed_contract_model.payload = json.loads(json.dumps(payload))
-        self._indicators_contract_model.event_type = json.loads(json.dumps(payload))
         self._feed_payload_model = json.loads(json.dumps(self._feed_contract_model.payload))
-        self._indicators_contract_model = json.loads(json.dumps(self._indicators_contract_model.payload))
+        
+        "Get the Contract Model"
+        self._indicators_contract_model = RequestModel()
+        self._indicators_contract_model.client_id = client_id
+        self._indicators_contract_model.event_type = 'indicators'
+        self._indicators_contract_model.payload = json.loads(json.dumps(payload))
+        self._indicators_payload_model = json.loads(json.dumps(self._indicators_contract_model.payload))
         return 100
       
       #      logging.error(f"Error while deserializing contract : {e}")
@@ -44,12 +46,16 @@ class StrategyRequestHandler(HandlerInterface):
         deserialize_status = self.deserialize_contract(contract=contract)
         if (deserialize_status == 100):
             self._feeds_contract = json.dumps(self._feed_payload_model['feeds'])
+            self._indicators_contract = json.dumps(self._indicators_payload_model['indicators'])
+            
             self._feed_contract_model.payload = self._feed_payload_model['feeds']
-            #self._indicators_contract = json.dumps(self._indicators_contract_model['indicators'])
-            #self._indicators_contract_model.payload = self._indicators_contract_model['indicators']
-            #self._topicpublisher.publish_topic(json.dumps(self._indicators_contract_model),"indicators")
+            self._indicators_contract_model.payload = self._indicators_payload_model['indicators']
+            
             _feed_serialized_contract = self.serialize_contract(self._feed_contract_model)
+            _indicators_serialized_contract = self.serialize_contract(self._indicators_contract_model)
+
             self._topicpublisher.publish_topic(_feed_serialized_contract,"feeds")
+            self._topicpublisher.publish_topic(_indicators_serialized_contract,"indicators")
             return _feed_serialized_contract
         return None
             

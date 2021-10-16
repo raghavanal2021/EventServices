@@ -42,6 +42,7 @@ class MapRouter():
                                                                                 payload=contract_obj['payload'],
                                                                                 track_id=track_id)
                     return metadata_response                
+                "Route all other handlers to the appropriate factory objects"
                 if requesttype != "keep_alive" and requesttype != "metadata":
                     logging.info(f"Calling Factory for the event {requesttype}")
                     handler_response = self.handler_factory.get_handler(requesttype,contract)                    

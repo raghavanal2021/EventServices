@@ -34,11 +34,15 @@ class TestClient():
         try:
             self.ws = yield websocket_connect(self.url)
             self.client_id = str(uuid.uuid4())
-            metadata = {"event_type":"metadata","event_producer":"Strategy1","client_id":self.client_id,"payload":{"client_id":self.client_id, "client_name":"Strategy1"}}
+            metadata = {"event_type":"metadata","event_producer":"Strategy1","strategy_id":1
+                        ,"client_id":self.client_id,"payload":{"client_id":self.client_id, "client_name":"Strategy1"}}
             self.ws.write_message(json.dumps(metadata))
-            dict = {"event_type":"stgy_request", "event_producer":"Strategy1","client_id":self.client_id, "payload": {"feeds":{"ticker":"ICICIBANK","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
+            dict = {"event_type":"stgy_request", "event_producer":"Strategy1","strategy_id":1,
+                    "client_id":self.client_id, "payload": {
+                    "feeds":{"ticker":"ICICIBANK","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},
+                    "indicators":[{"indicator_name":"MovingAverage","params":{"timeperiod":14}}]}}
             self.ws.write_message(json.dumps(dict))
-            dict = {"event_type":"stgy_request", "event_producer":"Strategy2","client_id":self.client_id, "payload": {"feeds":{"ticker":"MOTHERSUMI","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
+            dict = {"event_type":"stgy_request", "event_producer":"Strategy2","strategy_id":2,"client_id":str(uuid.uuid4()), "payload": {"feeds":{"ticker":"MOTHERSUMI","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
             self.ws.write_message(json.dumps(dict))
         except Exception as e:
             logging.error(e)
@@ -62,7 +66,7 @@ class TestClient():
         if self.ws is None:
             self.connect()
         else:
-            dict = {"event_type":"keep_alive","event_producer":"Strategy1","client_id":self.client_id,"payload":{"type":"keepalive"}}
+            dict = {"event_type":"keep_alive","event_producer":"Strategy1","strategy_id":1,"client_id":self.client_id,"payload":{"type":"keepalive"}}
             self.ws.write_message(json.dumps(dict))
 
 

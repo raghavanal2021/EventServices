@@ -3,7 +3,7 @@ import json
 
 from datetime import datetime
 class RequestModel():
-    "create, Gets and Sets the Response Model"
+    "create, Gets and Sets the Request Model"
 
     def __init__(self):
         self._event_type = None

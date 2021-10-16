@@ -7,7 +7,7 @@ import aio_pika
 from aio_pika.pool import T, Pool
 from aio_pika.robust_connection import connect_robust
 from dotenv import load_dotenv
-from router import MessageRouter
+#from router import MessageRouter
 import pyfiglet
 import threading
 
@@ -49,8 +49,9 @@ async def main(loop):
             try:
                 incoming_message = await queue.get(timeout=5)
                 message = incoming_message.body
+                print(message)
                 incoming_message.ack() 
-                start_thread(message)
+              #  start_thread(message)
             except asyncio.QueueEmpty:
                 pass
 def start_thread(message):
@@ -62,7 +63,7 @@ def start_thread(message):
       
 
 if __name__ == '__main__':
-        ascii_banner = pyfiglet.figlet_format("Feed Subscriber")
+        ascii_banner = pyfiglet.figlet_format("Indicators Subscriber")
         print("---------------------------------------------------------------------------------------------------------")
         print(ascii_banner)
         print("---------------------------------------------------------------------------------------------------------")
