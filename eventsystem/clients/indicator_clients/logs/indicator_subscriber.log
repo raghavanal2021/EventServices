@@ -1,0 +1,20 @@
+INFO : root -2021-11-07 06:12:52,771 - Starting the indicator router
+INFO : root -2021-11-07 06:12:52,772 - Starting the Indicator list
+ERROR : root -2021-11-07 06:12:52,815 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,816 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,817 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,818 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,818 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,820 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,821 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,822 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,823 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,824 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,826 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,828 - Indicator Map is not set for the data
+ERROR : root -2021-11-07 06:12:52,830 - Indicator Map is not set for the data
+INFO : root -2021-11-07 06:12:54,861 - Parsing Contract
+INFO : root -2021-11-07 06:12:54,863 - Indicator functions --> ['SMA', 'BBANDS']
+INFO : root -2021-11-07 06:12:54,863 - {1: {'SMA': 'SMA(close ,timeperiod=14)', 'BBANDS': 'BBANDS(close ,timeperiod=5,nbdevup=2,nbdevdn=2,matype=0)'}}
+INFO : root -2021-11-07 06:12:54,865 - Child Thread is being processed for strategy id 1
+INFO : root -2021-11-07 06:12:54,865 - Indicator List {1: {'SMA': 'SMA(close ,timeperiod=14)', 'BBANDS': 'BBANDS(close ,timeperiod=5,nbdevup=2,nbdevdn=2,matype=0)'}}

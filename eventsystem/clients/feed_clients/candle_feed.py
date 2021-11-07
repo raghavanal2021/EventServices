@@ -27,7 +27,8 @@ class CandleFeed():
         except Exception as e:
             logging.error(f"Error Connecting to MongoDB {e}")
 
-    def get_feed(self,start_date,period,ticker,client_id):
+    def get_feed(self,start_date,period,ticker,client_id,strategy_id):
+        "Get the feed from Mongo Database"
         self._mongo_coll = self.mongo_db[ticker]
         startdate = datetime.strptime(start_date,"%Y-%m-%d %H:%M:%S")
         enddate = timedelta(days=1) + startdate
@@ -36,15 +37,20 @@ class CandleFeed():
         _output_list = list(_output_cursor)
         _output_json_list = []
         for data in _output_list:
-            _output = self.prepare_output_format(data,client_id)
+            _contract = data
+            _contract['timestamp'] = datetime.strftime(_contract['timestamp'],'%Y-%m-%d %H:%M:%S')
+            _contract['ticker'] = ticker
+            _output = self.prepare_output_format(_contract,client_id,strategy_id,ticker)
             _output_json_list.append(_output)
-       # print(_output_json_list)
+    # print(_output_json_list)
         return _output_json_list
 
-    def prepare_output_format(self,data,client_id):
+    def prepare_output_format(self,data,client_id,strategy_id,ticker):
+        "Prepare the output format"
         self._responsemodel = ResponseModel()
         self._responsemodel.event_type = 'data_load'
         self._responsemodel.event_ts = str(datetime.now().isoformat())
         self._responsemodel.payload = str(data)
         self._responsemodel.client_id = client_id
-        return {"event_type":self._responsemodel.event_type,"event_ts":self._responsemodel.event_ts,"client_id":self._responsemodel.client_id,"payload":self._responsemodel.payload}
+        self._responsemodel.strategy_id = strategy_id
+        return {"event_type":self._responsemodel.event_type,"strategy_id":self._responsemodel.strategy_id,"event_ts":self._responsemodel.event_ts,"client_id":self._responsemodel.client_id,"payload":self._responsemodel.payload}

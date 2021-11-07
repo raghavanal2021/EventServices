@@ -3,69 +3,52 @@
 import logging
 import os
 import asyncio
-import aio_pika
-from aio_pika.pool import T, Pool
-from aio_pika.robust_connection import connect_robust
+from aio_pika import connect_robust
+from aio_pika.exchange import ExchangeType
+from aio_pika.message import IncomingMessage
 from dotenv import load_dotenv
 #from router import MessageRouter
 import pyfiglet
-import threading
+import threading,json
+from router import IndicatorRouter
 
-logging.basicConfig(filename="../feed_clients/logs/feed_subscriber.log",level=logging.INFO,filemode='w',
+logging.basicConfig(filename="../indicator_clients/logs/indicator_subscriber.log",level=logging.INFO,filemode='w',
                     format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
 load_dotenv()
+ind = IndicatorRouter()
 
-
-message_threads = []
+async def on_message(message:IncomingMessage):
+    "Process on every message"
+    with message.process():
+       ind.route_message(contract=message.body)
 
 async def main(loop):
+    "Start the connection"
     rabbit_url = os.getenv("rabbiturl")
-    try:
-        connection = await connect_robust(rabbit_url,loop=loop)
-        logging.info("RabbitMQ Connection Successful")
-    except Exception as e:
-        logging.error(f"Error connecting to Rabbit MQ {e}")
-    queue_name = os.getenv("queuename")
+    connection = await connect_robust(rabbit_url,loop=loop)
+
+    "Create a Channel"
+    channel = await connection.channel()
+    await channel.set_qos(prefetch_count=1)
+
+    "Declare an exchange"
+    rabbit_exchange = os.getenv("rabbitexchange")
+    exchange = await channel.declare_exchange(rabbit_exchange,ExchangeType.DIRECT,durable=True)
+
+    "Declare a queue and bind to exchange"
+    rabbit_queue = os.getenv("queuename")
     routing_key = os.getenv("routingkey")
-    try:
-        "Create the Channel"
-        channel = await connection.channel()
+    queue = await channel.declare_queue(rabbit_queue)
+    await queue.bind(rabbit_exchange,routing_key=routing_key)
 
-        "Declare the exchange"
-        exchange = await channel.declare_exchange("direct")
-
-        "Declare the queue"
-        queue = await channel.declare_queue(queue_name)
-
-        "Bind the queue"
-        exchange = os.getenv("rabbitexchange")
-        await queue.bind(exchange=exchange,routing_key=routing_key)
-        logging.info("Queue Binding Successful")
-    except Exception as e:
-        logging.error(f"Unable to create channel or bind to the queue {e}")
-    
-    "Receive the message"
-    while True:
-            try:
-                incoming_message = await queue.get(timeout=5)
-                message = incoming_message.body
-                print(message)
-                incoming_message.ack() 
-              #  start_thread(message)
-            except asyncio.QueueEmpty:
-                pass
-def start_thread(message):
-      print("Starting Thread")
-      messagerouter = MessageRouter()
-      t = threading.Thread(target=messagerouter.route_message,args=[message],daemon=True)
-      message_threads.append(t) 
-      t.start()
-      
+    "Start Listening to queue"
+    await queue.consume(on_message)
 
 if __name__ == '__main__':
-        ascii_banner = pyfiglet.figlet_format("Indicators Subscriber")
+        ascii_banner = pyfiglet.figlet_format("Indicators")
         print("---------------------------------------------------------------------------------------------------------")
         print(ascii_banner)
         print("---------------------------------------------------------------------------------------------------------")
         loop = asyncio.get_event_loop()
-        loop.run_until_complete(main(loop))
+        loop.create_task(main(loop))
+        loop.run_forever()

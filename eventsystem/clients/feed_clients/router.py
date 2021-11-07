@@ -25,6 +25,7 @@ class MessageRouter():
         print(contract_obj)
         _event_type = contract_obj["event_type"]
         _client_id = contract_obj['client_id']
+        _strategy_id = contract_obj['strategy_id']
         _payload = contract_obj['payload']
         payload_contract = json.loads(json.dumps(_payload))
         type = payload_contract['type']
@@ -34,7 +35,7 @@ class MessageRouter():
        # client_id = contract_obj['client_id']
         if type == 'candles':
             logging.info(f"Identified the type as {type} and calling the {type} feed")
-            _outputfeed = self._candlefeed.get_feed(start_date=start_date,period=period,ticker=ticker,client_id="")
+            _outputfeed = self._candlefeed.get_feed(start_date=start_date,period=period,ticker=ticker,client_id=_client_id,strategy_id = _strategy_id)
             for feeds in _outputfeed:
                 print(json.dumps(feeds))
                 self.output_listener.publish_message(feeds)

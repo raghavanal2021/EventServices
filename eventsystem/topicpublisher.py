@@ -18,6 +18,7 @@ class PublishTopic():
     def publish(self,message,routing_key):
         exchange = os.getenv("rabbitexchange")
         try:
+            self.channel.exchange_declare(exchange=exchange,exchange_type='direct',durable=True)
             self.channel.basic_publish(exchange=exchange,routing_key=routing_key,body=message)
             logging.info(f"Published the message to the clients for consumption")
         except Exception as e:

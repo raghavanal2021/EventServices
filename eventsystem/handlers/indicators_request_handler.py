@@ -1,6 +1,6 @@
 "This will handle all indicators related events"
 
-from handlers.hander_interface import HandlerInterface
+from handlers.handler_interface import HandlerInterface
 from models.requestcontract import RequestModel
 from handlers.handler_publishtopic import TopicPublisher
 import json,os
@@ -17,33 +17,31 @@ class IndicatorRequestHandler(HandlerInterface):
         self._topicpublisher = TopicPublisher()
 
     def deserialize_contract(self,contract):
+        print(f"Indicator Contract {contract}")
         parse_contract = json.loads(json.dumps(contract))
         client_id = parse_contract['client_id']
         event_type = parse_contract['event_type']
+        strategy_id = parse_contract['strategy_id']
         payload = parse_contract['payload']
-        print(f"Contract is {contract}")
-        print(f"Payload is {payload}")
-        self._feed_contract_model = RequestModel()
         self._indicators_contract_model = RequestModel()
-        self._feed_contract_model.client_id = client_id
         self._indicators_contract_model.client_id = client_id
-        #self._contract_model.event_ts = parse_contract['event_ts']
-        self._feed_contract_model.event_type = 'indicators'
-        self._indicators_contract_model.event_type = 'indicators'
-        self._feed_contract_model.payload = json.loads(json.dumps(payload))
-        self._indicators_contract_model.event_type = json.loads(json.dumps(payload))
-        self._feed_payload_model = json.loads(json.dumps(self._feed_contract_model.payload))
-        self._indicators_contract_model = json.loads(json.dumps(self._indicators_contract_model.payload))
+        self._indicators_contract_model.strategy_id = strategy_id
+        if event_type == 'data_load':
+            self._indicators_contract_model.event_type = 'indicators_data'
+        self._indicators_contract_model.payload = payload
         return 100
-    #      logging.error(f"Error while deserializing contract : {e}")
-    #return -100
-
+    
     def process(self,contract):
-        print("Indicators")
+        _deserialize_status = self.deserialize_contract(contract=contract)
+        if _deserialize_status == 100 :
+             output_obj = self.serialize_contract(self._indicators_contract_model)
+             self._topicpublisher.publish_topic(output_obj,'indicators')
+        else:
+            logging.error("Deserialization Failed")
         return None
             
     def serialize_contract(self,contract):
-        output_contract = {"event_type":contract.event_type, "event_ts":contract.event_ts,
+        output_contract = {"event_type":contract.event_type, "event_ts":contract.event_ts,"strategy_id":contract.strategy_id,
                             "client_id":contract.client_id, "payload":contract.payload}
         print(json.dumps(output_contract))
         return json.dumps(output_contract)

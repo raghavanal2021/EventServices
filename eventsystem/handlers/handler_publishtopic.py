@@ -25,7 +25,7 @@ class TopicPublisher():
     def publish_topic(self,message,routing_key):
         "Publish to the required routing"
         try:
-            self.channel.exchange_declare(exchange=self.rabbitexchange,exchange_type='direct')
+            self.channel.exchange_declare(exchange=self.rabbitexchange,exchange_type='direct',durable=True)
             self.channel.basic_publish(exchange=self.rabbitexchange, routing_key=routing_key,body=message)
             logging.info(f"Published to the event")
             return json.dumps({"status_code":100, "status_desc":"Routing succeeded"})
