@@ -18,3 +18,6 @@ class HandlerFactory():
 
         if (request_params == "data_load"):
             return IndicatorRequestHandler().process(contract=contract)
+
+        if (request_params == "indicator_output"):
+            return IndicatorRequestHandler().process(contract=contract)

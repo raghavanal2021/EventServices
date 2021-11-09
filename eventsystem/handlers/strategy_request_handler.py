@@ -69,5 +69,5 @@ class StrategyRequestHandler(HandlerInterface):
 
         output_contract = {"event_type":contract.event_type,"strategy_id":contract.strategy_id, "event_ts":contract.event_ts,
                             "client_id":contract.client_id,"payload":contract.payload}
-       # print(json.dumps(output_contract))
+        print(json.dumps(output_contract))
         return json.dumps(output_contract)

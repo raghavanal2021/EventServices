@@ -1,306 +1,460 @@
-INFO : root -2021-11-07 06:12:50,327 - RabbitMQ Connection Successful
-INFO : root -2021-11-07 06:12:50,330 - Queue Binding Successful
-INFO : root -2021-11-07 06:12:54,870 - Successfully connected to Mongo Server
-INFO : root -2021-11-07 06:12:54,870 - Started to route the message request to the message handler
-INFO : root -2021-11-07 06:12:54,902 - Connecting to the websocket server
-INFO : root -2021-11-07 06:12:54,905 - Identified the type as candles and calling the candles feed
-INFO : root -2021-11-07 06:12:54,915 - Starting the feed for ICICIBANK with start date 2021-01-01 09:00:00 and end date 2021-01-02 09:00:00
-INFO : root -2021-11-07 06:12:54,923 - Connected and running
-INFO : root -2021-11-07 06:12:54,946 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:12:54,950 - "{\"event_type\": \"ACK\", \"event_ts\": \"2021-11-07T06:12:54.938675\", \"client_id\": \"7a143c5b-f01b-4fca-b147-1f32a9df83dc\", \"payload\": {\"ackmessage\": \"Client Registered successfully...\", \"status\": 100}}"
-INFO : root -2021-11-07 06:12:55,021 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:12:55,021 - null
-INFO : root -2021-11-07 06:12:56,033 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:12:56,034 - null
-INFO : root -2021-11-07 06:12:57,043 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:12:57,043 - null
-INFO : root -2021-11-07 06:12:58,056 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:12:58,056 - null
-INFO : root -2021-11-07 06:12:59,065 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:12:59,065 - null
-INFO : root -2021-11-07 06:13:00,077 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:00,077 - null
-INFO : root -2021-11-07 06:13:01,084 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:01,084 - null
-INFO : root -2021-11-07 06:13:02,098 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:02,098 - null
-INFO : root -2021-11-07 06:13:03,114 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:03,114 - null
-INFO : root -2021-11-07 06:13:04,122 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:04,122 - null
-INFO : root -2021-11-07 06:13:05,129 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:05,129 - null
-INFO : root -2021-11-07 06:13:06,145 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:06,145 - null
-INFO : root -2021-11-07 06:13:07,345 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:07,345 - null
-INFO : root -2021-11-07 06:13:08,157 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:08,157 - null
-INFO : root -2021-11-07 06:13:09,165 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:09,165 - null
-INFO : root -2021-11-07 06:13:10,181 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:10,181 - null
-INFO : root -2021-11-07 06:13:11,188 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:11,188 - null
-INFO : root -2021-11-07 06:13:12,200 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:12,200 - null
-INFO : root -2021-11-07 06:13:13,216 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:13,217 - null
-INFO : root -2021-11-07 06:13:14,228 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:14,228 - null
-INFO : root -2021-11-07 06:13:14,897 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:14,897 - {"event_type": "ACK", "event_ts": "2021-11-07T06:13:14.896408", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:13:15,235 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:15,235 - null
-INFO : root -2021-11-07 06:13:16,246 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:16,246 - null
-INFO : root -2021-11-07 06:13:17,259 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:17,259 - null
-INFO : root -2021-11-07 06:13:18,273 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:18,274 - null
-INFO : root -2021-11-07 06:13:19,282 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:19,282 - null
-INFO : root -2021-11-07 06:13:20,296 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:20,296 - null
-INFO : root -2021-11-07 06:13:21,313 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:21,313 - null
-INFO : root -2021-11-07 06:13:22,311 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:22,312 - null
-INFO : root -2021-11-07 06:13:23,329 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:23,329 - null
-INFO : root -2021-11-07 06:13:24,335 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:24,336 - null
-INFO : root -2021-11-07 06:13:25,344 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:25,344 - null
-INFO : root -2021-11-07 06:13:26,363 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:26,363 - null
-INFO : root -2021-11-07 06:13:27,381 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:27,381 - null
-INFO : root -2021-11-07 06:13:28,392 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:28,392 - null
-INFO : root -2021-11-07 06:13:29,397 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:29,397 - null
-INFO : root -2021-11-07 06:13:30,404 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:30,404 - null
-INFO : root -2021-11-07 06:13:31,427 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:31,427 - null
-INFO : root -2021-11-07 06:13:32,429 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:32,429 - null
-INFO : root -2021-11-07 06:13:33,445 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:33,445 - null
-INFO : root -2021-11-07 06:13:34,454 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:34,455 - null
-INFO : root -2021-11-07 06:13:34,896 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:34,896 - {"event_type": "ACK", "event_ts": "2021-11-07T06:13:34.895943", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:13:35,461 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:35,461 - null
-INFO : root -2021-11-07 06:13:36,470 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:36,470 - null
-INFO : root -2021-11-07 06:13:37,481 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:37,481 - null
-INFO : root -2021-11-07 06:13:38,502 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:38,503 - null
-INFO : root -2021-11-07 06:13:39,508 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:39,508 - null
-INFO : root -2021-11-07 06:13:40,527 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:40,527 - null
-INFO : root -2021-11-07 06:13:41,538 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:41,538 - null
-INFO : root -2021-11-07 06:13:42,554 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:42,554 - null
-INFO : root -2021-11-07 06:13:43,560 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:43,560 - null
-INFO : root -2021-11-07 06:13:44,567 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:44,568 - null
-INFO : root -2021-11-07 06:13:45,578 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:45,578 - null
-INFO : root -2021-11-07 06:13:46,591 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:46,591 - null
-INFO : root -2021-11-07 06:13:47,603 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:47,604 - null
-INFO : root -2021-11-07 06:13:48,616 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:48,616 - null
-INFO : root -2021-11-07 06:13:49,628 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:49,629 - null
-INFO : root -2021-11-07 06:13:50,642 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:50,643 - null
-INFO : root -2021-11-07 06:13:51,652 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:51,652 - null
-INFO : root -2021-11-07 06:13:52,670 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:52,670 - null
-INFO : root -2021-11-07 06:13:53,683 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:53,683 - null
-INFO : root -2021-11-07 06:13:54,691 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:54,692 - null
-INFO : root -2021-11-07 06:13:54,896 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:54,896 - {"event_type": "ACK", "event_ts": "2021-11-07T06:13:54.895841", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:13:55,700 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:55,700 - null
-INFO : root -2021-11-07 06:13:56,711 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:56,711 - null
-INFO : root -2021-11-07 06:13:57,721 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:57,721 - null
-INFO : root -2021-11-07 06:13:58,734 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:58,734 - null
-INFO : root -2021-11-07 06:13:59,739 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:13:59,739 - null
-INFO : root -2021-11-07 06:14:00,759 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:00,759 - null
-INFO : root -2021-11-07 06:14:01,761 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:01,761 - null
-INFO : root -2021-11-07 06:14:02,761 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:02,762 - null
-INFO : root -2021-11-07 06:14:03,777 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:03,778 - null
-INFO : root -2021-11-07 06:14:04,783 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:04,783 - null
-INFO : root -2021-11-07 06:14:05,793 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:05,793 - null
-INFO : root -2021-11-07 06:14:06,806 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:06,806 - null
-INFO : root -2021-11-07 06:14:07,821 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:07,821 - null
-INFO : root -2021-11-07 06:14:08,834 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:08,835 - null
-INFO : root -2021-11-07 06:14:09,847 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:09,848 - null
-INFO : root -2021-11-07 06:14:10,854 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:10,854 - null
-INFO : root -2021-11-07 06:14:11,861 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:11,861 - null
-INFO : root -2021-11-07 06:14:12,881 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:12,881 - null
-INFO : root -2021-11-07 06:14:13,893 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:13,893 - null
-INFO : root -2021-11-07 06:14:14,899 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:14,899 - null
-INFO : root -2021-11-07 06:14:14,900 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:14,900 - {"event_type": "ACK", "event_ts": "2021-11-07T06:14:14.899270", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:14:15,915 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:15,915 - null
-INFO : root -2021-11-07 06:14:16,925 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:16,925 - null
-INFO : root -2021-11-07 06:14:17,934 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:17,934 - null
-INFO : root -2021-11-07 06:14:18,953 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:18,953 - null
-INFO : root -2021-11-07 06:14:19,969 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:19,969 - null
-INFO : root -2021-11-07 06:14:20,980 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:20,980 - null
-INFO : root -2021-11-07 06:14:21,991 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:21,991 - null
-INFO : root -2021-11-07 06:14:23,009 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:23,009 - null
-INFO : root -2021-11-07 06:14:24,024 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:24,024 - null
-INFO : root -2021-11-07 06:14:25,030 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:25,030 - null
-INFO : root -2021-11-07 06:14:26,032 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:26,032 - null
-INFO : root -2021-11-07 06:14:27,040 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:27,041 - null
-INFO : root -2021-11-07 06:14:28,053 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:28,053 - null
-INFO : root -2021-11-07 06:14:29,068 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:29,068 - null
-INFO : root -2021-11-07 06:14:30,083 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:30,084 - null
-INFO : root -2021-11-07 06:14:31,089 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:31,089 - null
-INFO : root -2021-11-07 06:14:32,105 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:32,105 - null
-INFO : root -2021-11-07 06:14:33,117 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:33,117 - null
-INFO : root -2021-11-07 06:14:34,126 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:34,126 - null
-INFO : root -2021-11-07 06:14:34,897 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:34,897 - {"event_type": "ACK", "event_ts": "2021-11-07T06:14:34.895247", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:14:35,135 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:35,135 - null
-INFO : root -2021-11-07 06:14:36,145 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:36,145 - null
-INFO : root -2021-11-07 06:14:37,152 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:37,152 - null
-INFO : root -2021-11-07 06:14:38,156 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:38,156 - null
-INFO : root -2021-11-07 06:14:39,177 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:39,177 - null
-INFO : root -2021-11-07 06:14:40,189 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:40,190 - null
-INFO : root -2021-11-07 06:14:41,194 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:41,194 - null
-INFO : root -2021-11-07 06:14:42,206 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:42,206 - null
-INFO : root -2021-11-07 06:14:43,213 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:43,213 - null
-INFO : root -2021-11-07 06:14:44,225 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:44,225 - null
-INFO : root -2021-11-07 06:14:45,237 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:45,237 - null
-INFO : root -2021-11-07 06:14:46,247 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:46,247 - null
-INFO : root -2021-11-07 06:14:47,255 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:47,255 - null
-INFO : root -2021-11-07 06:14:48,270 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:48,270 - null
-INFO : root -2021-11-07 06:14:49,282 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:49,282 - null
-INFO : root -2021-11-07 06:14:50,294 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:50,295 - null
-INFO : root -2021-11-07 06:14:51,302 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:51,302 - null
-INFO : root -2021-11-07 06:14:52,325 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:52,325 - null
-INFO : root -2021-11-07 06:14:53,330 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:53,331 - null
-INFO : root -2021-11-07 06:14:54,345 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:54,345 - null
-INFO : root -2021-11-07 06:14:54,897 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:54,897 - {"event_type": "ACK", "event_ts": "2021-11-07T06:14:54.896311", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:14:55,348 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:55,348 - null
-INFO : root -2021-11-07 06:14:56,362 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:56,362 - null
-INFO : root -2021-11-07 06:14:57,373 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:57,373 - null
-INFO : root -2021-11-07 06:14:58,385 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:58,385 - null
-INFO : root -2021-11-07 06:14:59,393 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:14:59,394 - null
-INFO : root -2021-11-07 06:15:00,405 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:00,405 - null
-INFO : root -2021-11-07 06:15:01,408 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:01,408 - null
-INFO : root -2021-11-07 06:15:02,418 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:02,418 - null
-INFO : root -2021-11-07 06:15:03,440 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:03,440 - null
-INFO : root -2021-11-07 06:15:04,459 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:04,460 - null
-INFO : root -2021-11-07 06:15:05,463 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:05,463 - null
-INFO : root -2021-11-07 06:15:06,475 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:06,476 - null
-INFO : root -2021-11-07 06:15:07,489 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:07,489 - null
-INFO : root -2021-11-07 06:15:08,501 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:08,501 - null
-INFO : root -2021-11-07 06:15:09,518 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:09,519 - null
-INFO : root -2021-11-07 06:15:10,526 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:10,526 - null
-INFO : root -2021-11-07 06:15:11,539 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:11,539 - null
-INFO : root -2021-11-07 06:15:12,553 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:12,554 - null
-INFO : root -2021-11-07 06:15:13,563 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:13,563 - null
-INFO : root -2021-11-07 06:15:14,578 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:14,578 - null
-INFO : root -2021-11-07 06:15:14,897 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:14,897 - {"event_type": "ACK", "event_ts": "2021-11-07T06:15:14.896383", "client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "payload": {"client_id": "7a143c5b-f01b-4fca-b147-1f32a9df83dc", "event_type": "keepalive"}}
-INFO : root -2021-11-07 06:15:15,584 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:15,585 - null
-INFO : root -2021-11-07 06:15:16,596 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-INFO : root -2021-11-07 06:15:16,596 - null
+INFO : root -2021-11-10 01:56:31,346 - RabbitMQ Connection Successful
+INFO : root -2021-11-10 01:56:31,346 - Queue Binding Successful
+INFO : root -2021-11-10 01:56:36,097 - Successfully connected to Mongo Server
+INFO : root -2021-11-10 01:56:36,098 - Started to route the message request to the message handler
+INFO : root -2021-11-10 01:56:36,127 - Connecting to the websocket server
+INFO : root -2021-11-10 01:56:36,130 - Identified the type as candles and calling the candles feed
+INFO : root -2021-11-10 01:56:36,138 - Starting the feed for ICICIBANK with start date 2021-01-01 09:00:00 and end date 2021-01-02 09:00:00
+INFO : root -2021-11-10 01:56:36,150 - Connected and running
+INFO : root -2021-11-10 01:56:36,174 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:36,178 - "{\"event_type\": \"ACK\", \"event_ts\": \"2021-11-10T01:56:36.167063\", \"client_id\": \"8fd30c8b-123d-4ec7-bb84-28955074bfb3\", \"payload\": {\"ackmessage\": \"Client Registered successfully...\", \"status\": 100}}"
+INFO : root -2021-11-10 01:56:36,245 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:36,248 - null
+INFO : root -2021-11-10 01:56:37,242 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:37,244 - null
+INFO : root -2021-11-10 01:56:38,248 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:38,249 - null
+INFO : root -2021-11-10 01:56:39,242 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:39,243 - null
+INFO : root -2021-11-10 01:56:40,277 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:40,277 - null
+INFO : root -2021-11-10 01:56:41,263 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:41,264 - null
+INFO : root -2021-11-10 01:56:42,271 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:42,271 - null
+INFO : root -2021-11-10 01:56:43,281 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:43,281 - null
+INFO : root -2021-11-10 01:56:44,286 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:44,286 - null
+INFO : root -2021-11-10 01:56:45,292 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:45,293 - null
+INFO : root -2021-11-10 01:56:46,328 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:46,329 - null
+INFO : root -2021-11-10 01:56:47,339 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:47,339 - null
+INFO : root -2021-11-10 01:56:48,342 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:48,342 - null
+INFO : root -2021-11-10 01:56:49,353 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:49,353 - null
+INFO : root -2021-11-10 01:56:50,353 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:50,354 - null
+INFO : root -2021-11-10 01:56:51,359 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:51,359 - null
+INFO : root -2021-11-10 01:56:52,380 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:52,380 - null
+INFO : root -2021-11-10 01:56:53,385 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:53,385 - null
+INFO : root -2021-11-10 01:56:54,391 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:54,391 - null
+INFO : root -2021-11-10 01:56:55,405 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:55,405 - null
+INFO : root -2021-11-10 01:56:56,126 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:56,126 - {"event_type": "ACK", "event_ts": "2021-11-10T01:56:56.125657", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:56:56,423 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:56,423 - null
+INFO : root -2021-11-10 01:56:57,420 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:57,420 - null
+INFO : root -2021-11-10 01:56:58,435 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:58,435 - null
+INFO : root -2021-11-10 01:56:59,450 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:56:59,450 - null
+INFO : root -2021-11-10 01:57:00,459 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:00,459 - null
+INFO : root -2021-11-10 01:57:01,470 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:01,470 - null
+INFO : root -2021-11-10 01:57:02,476 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:02,476 - null
+INFO : root -2021-11-10 01:57:03,475 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:03,475 - null
+INFO : root -2021-11-10 01:57:04,489 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:04,489 - null
+INFO : root -2021-11-10 01:57:05,501 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:05,502 - null
+INFO : root -2021-11-10 01:57:06,516 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:06,516 - null
+INFO : root -2021-11-10 01:57:07,522 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:07,522 - null
+INFO : root -2021-11-10 01:57:08,523 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:08,523 - null
+INFO : root -2021-11-10 01:57:09,536 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:09,537 - null
+INFO : root -2021-11-10 01:57:10,551 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:10,552 - null
+INFO : root -2021-11-10 01:57:11,564 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:11,564 - null
+INFO : root -2021-11-10 01:57:12,571 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:12,571 - null
+INFO : root -2021-11-10 01:57:13,606 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:13,608 - null
+INFO : root -2021-11-10 01:57:14,611 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:14,612 - null
+INFO : root -2021-11-10 01:57:15,590 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:15,591 - null
+INFO : root -2021-11-10 01:57:16,126 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:16,126 - {"event_type": "ACK", "event_ts": "2021-11-10T01:57:16.125491", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:57:16,594 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:16,595 - null
+INFO : root -2021-11-10 01:57:17,601 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:17,601 - null
+INFO : root -2021-11-10 01:57:18,615 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:18,615 - null
+INFO : root -2021-11-10 01:57:19,629 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:19,629 - null
+INFO : root -2021-11-10 01:57:20,644 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:20,644 - null
+INFO : root -2021-11-10 01:57:21,663 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:21,663 - null
+INFO : root -2021-11-10 01:57:22,661 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:22,661 - null
+INFO : root -2021-11-10 01:57:23,673 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:23,673 - null
+INFO : root -2021-11-10 01:57:24,677 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:24,677 - null
+INFO : root -2021-11-10 01:57:25,692 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:25,692 - null
+INFO : root -2021-11-10 01:57:26,710 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:26,710 - null
+INFO : root -2021-11-10 01:57:27,710 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:27,710 - null
+INFO : root -2021-11-10 01:57:28,726 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:28,726 - null
+INFO : root -2021-11-10 01:57:29,728 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:29,728 - null
+INFO : root -2021-11-10 01:57:30,862 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:30,863 - null
+INFO : root -2021-11-10 01:57:31,765 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:31,765 - null
+INFO : root -2021-11-10 01:57:32,760 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:32,760 - null
+INFO : root -2021-11-10 01:57:33,779 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:33,779 - null
+INFO : root -2021-11-10 01:57:34,793 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:34,793 - null
+INFO : root -2021-11-10 01:57:35,793 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:35,793 - null
+INFO : root -2021-11-10 01:57:36,139 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:36,139 - {"event_type": "ACK", "event_ts": "2021-11-10T01:57:36.139082", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:57:36,807 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:36,807 - null
+INFO : root -2021-11-10 01:57:37,803 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:37,804 - null
+INFO : root -2021-11-10 01:57:38,830 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:38,830 - null
+INFO : root -2021-11-10 01:57:39,824 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:39,824 - null
+INFO : root -2021-11-10 01:57:40,822 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:40,822 - null
+INFO : root -2021-11-10 01:57:41,840 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:41,840 - null
+INFO : root -2021-11-10 01:57:42,840 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:42,840 - null
+INFO : root -2021-11-10 01:57:43,855 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:43,855 - null
+INFO : root -2021-11-10 01:57:44,856 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:44,857 - null
+INFO : root -2021-11-10 01:57:45,871 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:45,871 - null
+INFO : root -2021-11-10 01:57:46,977 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:46,977 - null
+INFO : root -2021-11-10 01:57:47,889 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:47,889 - null
+INFO : root -2021-11-10 01:57:48,906 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:48,906 - null
+INFO : root -2021-11-10 01:57:49,922 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:49,922 - null
+INFO : root -2021-11-10 01:57:50,921 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:50,922 - null
+INFO : root -2021-11-10 01:57:51,935 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:51,935 - null
+INFO : root -2021-11-10 01:57:52,941 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:52,941 - null
+INFO : root -2021-11-10 01:57:53,964 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:53,965 - null
+INFO : root -2021-11-10 01:57:54,958 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:54,958 - null
+INFO : root -2021-11-10 01:57:55,957 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:55,957 - null
+INFO : root -2021-11-10 01:57:56,111 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:56,111 - {"event_type": "ACK", "event_ts": "2021-11-10T01:57:56.110266", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:57:56,974 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:56,974 - null
+INFO : root -2021-11-10 01:57:57,975 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:57,975 - null
+INFO : root -2021-11-10 01:57:58,996 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:58,997 - null
+INFO : root -2021-11-10 01:57:59,989 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:57:59,989 - null
+INFO : root -2021-11-10 01:58:00,993 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:00,993 - null
+INFO : root -2021-11-10 01:58:02,009 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:02,009 - null
+INFO : root -2021-11-10 01:58:03,011 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:03,011 - null
+INFO : root -2021-11-10 01:58:04,032 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:04,033 - null
+INFO : root -2021-11-10 01:58:05,027 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:05,028 - null
+INFO : root -2021-11-10 01:58:06,029 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:06,029 - null
+INFO : root -2021-11-10 01:58:07,029 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:07,029 - null
+INFO : root -2021-11-10 01:58:08,039 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:08,039 - null
+INFO : root -2021-11-10 01:58:09,057 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:09,057 - null
+INFO : root -2021-11-10 01:58:10,065 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:10,065 - null
+INFO : root -2021-11-10 01:58:11,078 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:11,078 - null
+INFO : root -2021-11-10 01:58:12,094 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:12,094 - null
+INFO : root -2021-11-10 01:58:13,094 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:13,094 - null
+INFO : root -2021-11-10 01:58:14,117 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:14,118 - null
+INFO : root -2021-11-10 01:58:15,126 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:15,126 - null
+INFO : root -2021-11-10 01:58:16,141 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:16,141 - null
+INFO : root -2021-11-10 01:58:16,141 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:16,142 - {"event_type": "ACK", "event_ts": "2021-11-10T01:58:16.140327", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:58:17,142 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:17,142 - null
+INFO : root -2021-11-10 01:58:18,153 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:18,153 - null
+INFO : root -2021-11-10 01:58:19,169 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:19,170 - null
+INFO : root -2021-11-10 01:58:20,182 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:20,182 - null
+INFO : root -2021-11-10 01:58:21,200 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:21,200 - null
+INFO : root -2021-11-10 01:58:22,200 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:22,200 - null
+INFO : root -2021-11-10 01:58:23,217 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:23,217 - null
+INFO : root -2021-11-10 01:58:24,235 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:24,236 - null
+INFO : root -2021-11-10 01:58:25,248 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:25,248 - null
+INFO : root -2021-11-10 01:58:26,261 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:26,262 - null
+INFO : root -2021-11-10 01:58:27,265 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:27,265 - null
+INFO : root -2021-11-10 01:58:28,280 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:28,280 - null
+INFO : root -2021-11-10 01:58:29,300 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:29,300 - null
+INFO : root -2021-11-10 01:58:30,310 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:30,310 - null
+INFO : root -2021-11-10 01:58:31,313 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:31,313 - null
+INFO : root -2021-11-10 01:58:32,329 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:32,329 - null
+INFO : root -2021-11-10 01:58:33,330 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:33,330 - null
+INFO : root -2021-11-10 01:58:34,337 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:34,338 - null
+INFO : root -2021-11-10 01:58:35,334 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:35,334 - null
+INFO : root -2021-11-10 01:58:36,110 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:36,110 - {"event_type": "ACK", "event_ts": "2021-11-10T01:58:36.110943", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:58:36,337 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:36,337 - null
+INFO : root -2021-11-10 01:58:37,338 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:37,338 - null
+INFO : root -2021-11-10 01:58:38,341 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:38,341 - null
+INFO : root -2021-11-10 01:58:39,346 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:39,346 - null
+INFO : root -2021-11-10 01:58:40,344 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:40,344 - null
+INFO : root -2021-11-10 01:58:41,362 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:41,362 - null
+INFO : root -2021-11-10 01:58:42,368 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:42,368 - null
+INFO : root -2021-11-10 01:58:43,363 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:43,363 - null
+INFO : root -2021-11-10 01:58:44,381 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:44,381 - null
+INFO : root -2021-11-10 01:58:45,397 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:45,398 - null
+INFO : root -2021-11-10 01:58:46,409 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:46,409 - null
+INFO : root -2021-11-10 01:58:47,413 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:47,413 - null
+INFO : root -2021-11-10 01:58:48,412 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:48,413 - null
+INFO : root -2021-11-10 01:58:49,430 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:49,430 - null
+INFO : root -2021-11-10 01:58:50,431 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:50,431 - null
+INFO : root -2021-11-10 01:58:51,432 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:51,432 - null
+INFO : root -2021-11-10 01:58:52,447 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:52,447 - null
+INFO : root -2021-11-10 01:58:53,462 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:53,462 - null
+INFO : root -2021-11-10 01:58:54,483 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:54,484 - null
+INFO : root -2021-11-10 01:58:55,495 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:55,495 - null
+INFO : root -2021-11-10 01:58:56,131 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:56,131 - {"event_type": "ACK", "event_ts": "2021-11-10T01:58:56.131255", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:58:56,511 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:56,511 - null
+INFO : root -2021-11-10 01:58:57,528 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:57,529 - null
+INFO : root -2021-11-10 01:58:58,530 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:58,530 - null
+INFO : root -2021-11-10 01:58:59,546 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:58:59,547 - null
+INFO : root -2021-11-10 01:59:00,559 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:00,559 - null
+INFO : root -2021-11-10 01:59:01,564 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:01,564 - null
+INFO : root -2021-11-10 01:59:02,575 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:02,576 - null
+INFO : root -2021-11-10 01:59:03,594 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:03,594 - null
+INFO : root -2021-11-10 01:59:04,612 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:04,612 - null
+INFO : root -2021-11-10 01:59:05,625 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:05,625 - null
+INFO : root -2021-11-10 01:59:06,646 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:06,646 - null
+INFO : root -2021-11-10 01:59:07,639 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:07,640 - null
+INFO : root -2021-11-10 01:59:08,655 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:08,656 - null
+INFO : root -2021-11-10 01:59:09,661 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:09,662 - null
+INFO : root -2021-11-10 01:59:10,673 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:10,673 - null
+INFO : root -2021-11-10 01:59:11,690 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:11,690 - null
+INFO : root -2021-11-10 01:59:12,691 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:12,691 - null
+INFO : root -2021-11-10 01:59:13,692 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:13,692 - null
+INFO : root -2021-11-10 01:59:14,695 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:14,695 - null
+INFO : root -2021-11-10 01:59:15,739 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:15,739 - null
+INFO : root -2021-11-10 01:59:16,110 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:16,110 - {"event_type": "ACK", "event_ts": "2021-11-10T01:59:16.110716", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:59:16,710 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:16,710 - null
+INFO : root -2021-11-10 01:59:17,711 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:17,711 - null
+INFO : root -2021-11-10 01:59:18,715 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:18,715 - null
+INFO : root -2021-11-10 01:59:19,720 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:19,721 - null
+INFO : root -2021-11-10 01:59:20,723 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:20,723 - null
+INFO : root -2021-11-10 01:59:21,738 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:21,738 - null
+INFO : root -2021-11-10 01:59:22,738 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:22,738 - null
+INFO : root -2021-11-10 01:59:23,755 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:23,756 - null
+INFO : root -2021-11-10 01:59:24,772 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:24,772 - null
+INFO : root -2021-11-10 01:59:25,786 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:25,786 - null
+INFO : root -2021-11-10 01:59:26,803 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:26,803 - null
+INFO : root -2021-11-10 01:59:27,805 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:27,805 - null
+INFO : root -2021-11-10 01:59:28,806 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:28,807 - null
+INFO : root -2021-11-10 01:59:29,815 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:29,815 - null
+INFO : root -2021-11-10 01:59:30,808 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:30,808 - null
+INFO : root -2021-11-10 01:59:31,821 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:31,821 - null
+INFO : root -2021-11-10 01:59:32,843 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:32,843 - null
+INFO : root -2021-11-10 01:59:33,856 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:33,856 - null
+INFO : root -2021-11-10 01:59:34,875 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:34,875 - null
+INFO : root -2021-11-10 01:59:35,878 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:35,878 - null
+INFO : root -2021-11-10 01:59:36,134 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:36,134 - {"event_type": "ACK", "event_ts": "2021-11-10T01:59:36.134370", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:59:36,908 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:36,908 - null
+INFO : root -2021-11-10 01:59:37,891 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:37,891 - null
+INFO : root -2021-11-10 01:59:38,892 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:38,892 - null
+INFO : root -2021-11-10 01:59:39,912 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:39,912 - null
+INFO : root -2021-11-10 01:59:40,913 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:40,913 - null
+INFO : root -2021-11-10 01:59:41,928 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:41,928 - null
+INFO : root -2021-11-10 01:59:42,955 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:42,956 - null
+INFO : root -2021-11-10 01:59:43,950 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:43,950 - null
+INFO : root -2021-11-10 01:59:44,956 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:44,956 - null
+INFO : root -2021-11-10 01:59:45,969 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:45,969 - null
+INFO : root -2021-11-10 01:59:46,985 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:46,985 - null
+INFO : root -2021-11-10 01:59:47,984 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:47,984 - null
+INFO : root -2021-11-10 01:59:48,993 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:48,993 - null
+INFO : root -2021-11-10 01:59:50,010 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:50,010 - null
+INFO : root -2021-11-10 01:59:51,015 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:51,015 - null
+INFO : root -2021-11-10 01:59:52,029 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:52,029 - null
+INFO : root -2021-11-10 01:59:53,026 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:53,026 - null
+INFO : root -2021-11-10 01:59:54,046 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:54,046 - null
+INFO : root -2021-11-10 01:59:55,071 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:55,072 - null
+INFO : root -2021-11-10 01:59:56,064 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:56,064 - null
+INFO : root -2021-11-10 01:59:56,117 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:56,117 - {"event_type": "ACK", "event_ts": "2021-11-10T01:59:56.117670", "client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "payload": {"client_id": "8fd30c8b-123d-4ec7-bb84-28955074bfb3", "event_type": "keepalive"}}
+INFO : root -2021-11-10 01:59:57,065 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:57,065 - null
+INFO : root -2021-11-10 01:59:58,083 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:58,083 - null
+INFO : root -2021-11-10 01:59:59,095 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 01:59:59,095 - null
+INFO : root -2021-11-10 02:00:00,104 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:00,104 - null
+INFO : root -2021-11-10 02:00:01,100 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:01,101 - null
+INFO : root -2021-11-10 02:00:02,120 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:02,121 - null
+INFO : root -2021-11-10 02:00:03,124 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:03,125 - null
+INFO : root -2021-11-10 02:00:04,141 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:04,142 - null
+INFO : root -2021-11-10 02:00:05,130 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:05,130 - null
+INFO : root -2021-11-10 02:00:06,135 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:06,136 - null
+INFO : root -2021-11-10 02:00:07,142 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:07,142 - null
+INFO : root -2021-11-10 02:00:08,146 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:08,146 - null
+INFO : root -2021-11-10 02:00:09,147 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:09,147 - null
+INFO : root -2021-11-10 02:00:10,147 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:10,147 - null
+INFO : root -2021-11-10 02:00:11,172 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:11,172 - null
+INFO : root -2021-11-10 02:00:12,179 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+INFO : root -2021-11-10 02:00:12,179 - null

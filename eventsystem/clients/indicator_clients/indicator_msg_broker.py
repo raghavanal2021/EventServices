@@ -9,7 +9,7 @@ from aio_pika.message import IncomingMessage
 from dotenv import load_dotenv
 #from router import MessageRouter
 import pyfiglet
-import threading,json
+import threading,json, signal
 from router import IndicatorRouter
 
 logging.basicConfig(filename="../indicator_clients/logs/indicator_subscriber.log",level=logging.INFO,filemode='w',
@@ -43,6 +43,11 @@ async def main(loop):
 
     "Start Listening to queue"
     await queue.consume(on_message)
+
+async def my_handler():
+    print('Stopping')
+    for task in asyncio.Task.all_tasks():
+        task.cancel()
 
 if __name__ == '__main__':
         ascii_banner = pyfiglet.figlet_format("Indicators")

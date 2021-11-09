@@ -14,13 +14,13 @@ class SpawnStrategy():
         self._error_flags = False
         self.threads = []
     
-    def child_process_meta(self,indicator_list,strategy_id):
+    def child_process_meta(self,indicator_list,strategy_id,client_id):
         logging.info(f"Child Thread is being processed for strategy id {strategy_id}")
         logging.info(f"Indicator List {indicator_list}")
-        self._listener = Listen_Changes(strategy_id=strategy_id,indicator_list=indicator_list)
+        self._listener = Listen_Changes(strategy_id=strategy_id,indicator_list=indicator_list,client_id=client_id)
         self._listener.watchchanges(strategy_id=strategy_id,indicator_list=indicator_list)
 
-    def start_process(self,indicator_list,strategy_id):
-        self._thread = threading.Thread(target=self.child_process_meta,args=(indicator_list,strategy_id),daemon=True)
+    def start_process(self,indicator_list,strategy_id,client_id):
+        self._thread = threading.Thread(target=self.child_process_meta,args=(indicator_list,strategy_id,client_id),daemon=True)
         self.threads.append(self._thread)
         self._thread.start()

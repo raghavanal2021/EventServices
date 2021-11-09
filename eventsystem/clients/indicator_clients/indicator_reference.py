@@ -20,6 +20,7 @@ class InitiateIndicators():
 
 
     def get_ind_for_strgy(self,contract):
+        "Get the indicators for the strategy"
         logging.info("Parsing Contract")
         result = self._parsecontract(contract)
         if (result == 100):
@@ -34,6 +35,7 @@ class InitiateIndicators():
             
 
     def _parsecontract(self,contract):
+        "Parse Contracts for the strategy"
         try:
             contract_obj = json.loads(contract.decode('utf-8'))
             self._stgy_id = contract_obj['strategy_id']
@@ -45,6 +47,7 @@ class InitiateIndicators():
             return -100
 
     def _prepare_ind_func(self, ind):
+        "Prepare indicator functions for the strategy"
         for indicators in ind:
             indicators = json.loads(str(indicators).replace("\'", "\""))
             _ind_type = indicators["indicator_name"]

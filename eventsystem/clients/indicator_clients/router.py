@@ -40,7 +40,7 @@ class IndicatorRouter():
             self._func_list = self.ini_ind.get_ind_for_strgy(contract)          
             self._strat_func[_strategy_id]  = self._func_list
             logging.info(self._strat_func)
-            self.spawn_strategy.start_process(self._strat_func,_strategy_id)
+            self.spawn_strategy.start_process(self._strat_func,_strategy_id,_client_id)
             self._is_ind_map = True
             
 
@@ -48,7 +48,7 @@ class IndicatorRouter():
         if (_eventtype == 'indicators_data'):
             if self._is_ind_map == True:
                 _payload = _payload.replace("\'", "\"")
-                self._insert_payload.insert_data(_payload,_strategy_id)
+                self._insert_payload.insert_data(_payload,_strategy_id,"ChangeDB")
             else:
-                logging.error("Indicator Map is not set for the data")
+                logging.warning("Indicator Map is not set for the data")
             self._payload_dict[_strategy_id] = _payload

@@ -1,10 +1,12 @@
 "Run Indicator List"
+from pandas.core.frame import DataFrame
 from pymongo import MongoClient
 import logging, os,json
 from dotenv import load_dotenv
 from talib import func
 from talib.abstract import Function
 import talib
+
 
 load_dotenv()
 logging.basicConfig(filename="../indicator_clients/logs/indicator_subscriber.log",level=logging.INFO,filemode='w',
@@ -21,13 +23,13 @@ class RunIndicator():
         self._indfunc = {}
         self._ind_array = self.prepare_indicators(indicator_list=indicator_list,strategy_id=strategy_id)
         self.key_string = ""
+        
 
     def prepare_indicators(self,strategy_id,indicator_list):
         "Loop through the indicator contract and have the indicator list as a dictionary"
         self._indicator_list = indicator_list[strategy_id]
         for indicators in self._indicator_list:
             _ind = self._indicator_list[indicators].replace("\'","\"")
-            print(_ind)
             self._indfunc[indicators] = self._indicator_list[indicators]
             logging.info(f"Indicator list Prepared {self._indfunc}")
         return self._indfunc
@@ -39,11 +41,11 @@ class RunIndicator():
         low = df['low']
         volume = df['volume']
         ticker = df['ticker']
-        print(f"Function --> {fn}")
         fn_attr = eval(fn)
         return fn_attr
 
-    def next(self,df):
+    def next(self,df:DataFrame):
+        df.drop(columns=["_id"],axis='columns', inplace=True)
         for ind in self._indfunc:
             print(self._indfunc[ind])
             ind_obj = self._indfunc[ind]
@@ -58,7 +60,8 @@ class RunIndicator():
                     exec(f"{self.key_string} = self._ta_func('talib.{ind_obj}',df)")
                 else:
                     self.key_string = f"df[{ind}]"
-                    df[f"{ind}"] = self._ta_func(f"talib.{ind_obj}",df)
+                    df[f"{ind}"] = self._ta_func(f"talib.{ind_obj}",df)     
             except Exception as e:
                 logging.error(f"Error in calculating the indicators {e}")
+        return df.tail(1).to_json(orient='records',date_format='iso')
         
