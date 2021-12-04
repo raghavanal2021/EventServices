@@ -1,4 +1,0 @@
-INFO : root -2021-12-03 12:46:00,215 - Router class initialized
-INFO : root -2021-12-03 12:46:00,216 - Getting routes from the file {"stgy_request": ["feeds","indicators"],"data_load":["indicators"],"indicator_output":["stgy_response"]}
-INFO : root -2021-12-03 12:46:00,216 - Metadata Request is running...
-INFO : root -2021-12-03 12:46:00,316 - Keep Alive Handler running
