@@ -1,33 +1,35 @@
-2021-11-10 01:56:36,016 -  _____         _      ____ _ _            _   
+2021-12-03 13:13:48,578 -  _____         _      ____ _ _            _   
 |_   _|__  ___| |_   / ___| (_) ___ _ __ | |_ 
   | |/ _ \/ __| __| | |   | | |/ _ \ '_ \| __|
   | |  __/\__ \ |_  | |___| | |  __/ | | | |_ 
   |_|\___||___/\__|  \____|_|_|\___|_| |_|\__|
                                               
 
-2021-11-10 01:56:36,016 - Connecting to the websocket server
-2021-11-10 01:56:36,031 - Connected and running
-2021-11-10 01:56:36,069 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:56:36,074 - "{\"event_type\": \"ACK\", \"event_ts\": \"2021-11-10T01:56:36.060888\", \"client_id\": \"0cc21841-21c7-4018-99c9-aa9fa038c2d8\", \"payload\": {\"ackmessage\": \"Client Registered successfully...\", \"status\": 100}}"
-2021-11-10 01:56:36,093 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:56:36,105 - "{\"event_type\": \"data\", \"strategy_id\": 1, \"event_ts\": \"2021-11-10T01:56:36.074897\", \"client_id\": \"0cc21841-21c7-4018-99c9-aa9fa038c2d8\", \"payload\": {\"ticker\": \"ICICIBANK\", \"period\": \"5T\", \"start_date\": \"2021-01-01 09:00:00\", \"type\": \"candles\"}}"
-2021-11-10 01:56:56,044 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:56:56,048 - {"event_type": "ACK", "event_ts": "2021-11-10T01:56:56.042658", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:57:16,026 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:57:16,026 - {"event_type": "ACK", "event_ts": "2021-11-10T01:57:16.024499", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:57:36,027 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:57:36,027 - {"event_type": "ACK", "event_ts": "2021-11-10T01:57:36.027201", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:57:56,029 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:57:56,029 - {"event_type": "ACK", "event_ts": "2021-11-10T01:57:56.029220", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:58:16,026 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:58:16,026 - {"event_type": "ACK", "event_ts": "2021-11-10T01:58:16.026804", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:58:36,030 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:58:36,030 - {"event_type": "ACK", "event_ts": "2021-11-10T01:58:36.030849", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:58:56,021 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:58:56,021 - {"event_type": "ACK", "event_ts": "2021-11-10T01:58:56.021609", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:59:16,016 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:59:16,016 - {"event_type": "ACK", "event_ts": "2021-11-10T01:59:16.016962", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:59:36,025 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:59:36,025 - {"event_type": "ACK", "event_ts": "2021-11-10T01:59:36.025034", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
-2021-11-10 01:59:56,024 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
-2021-11-10 01:59:56,024 - {"event_type": "ACK", "event_ts": "2021-11-10T01:59:56.024160", "client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "payload": {"client_id": "0cc21841-21c7-4018-99c9-aa9fa038c2d8", "event_type": "keepalive"}}
+2021-12-03 13:13:48,597 - Connecting to the websocket server
+2021-12-03 13:13:48,635 - Connected and running
+2021-12-03 13:13:48,684 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:13:48,699 - "{\"event_type\": \"ACK\", \"event_ts\": \"2021-12-03T13:13:48.675567\", \"client_id\": \"32b51ee0-23d8-4504-bf19-be5af0a426cc\", \"payload\": {\"ackmessage\": \"Client Registered successfully...\", \"status\": 100}}"
+2021-12-03 13:13:48,743 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:13:48,759 - "{\"event_type\": \"data\", \"strategy_id\": 1, \"event_ts\": \"2021-12-03T13:13:48.720698\", \"client_id\": \"32b51ee0-23d8-4504-bf19-be5af0a426cc\", \"payload\": {\"ticker\": \"ICICIBANK\", \"period\": \"5T\", \"start_date\": \"2021-01-01 09:00:00\", \"type\": \"candles\"}}"
+2021-12-03 13:13:48,814 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:13:48,822 - "{\"event_type\": \"data\", \"strategy_id\": 2, \"event_ts\": \"2021-12-03T13:13:48.797095\", \"client_id\": \"8d94b3e8-f070-4830-baac-493f4449ece9\", \"payload\": {\"ticker\": \"MOTHERSUMI\", \"period\": \"5T\", \"start_date\": \"2021-01-01 09:00:00\", \"type\": \"candles\"}}"
+2021-12-03 13:14:08,632 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:14:08,633 - {"event_type": "ACK", "event_ts": "2021-12-03T13:14:08.625611", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:14:28,602 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:14:28,603 - {"event_type": "ACK", "event_ts": "2021-12-03T13:14:28.596955", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:14:48,612 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:14:48,612 - {"event_type": "ACK", "event_ts": "2021-12-03T13:14:48.609363", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:15:08,605 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:15:08,605 - {"event_type": "ACK", "event_ts": "2021-12-03T13:15:08.600617", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:15:28,599 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:15:28,602 - {"event_type": "ACK", "event_ts": "2021-12-03T13:15:28.597649", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:15:48,601 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:15:48,601 - {"event_type": "ACK", "event_ts": "2021-12-03T13:15:48.596711", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:16:08,603 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:16:08,603 - {"event_type": "ACK", "event_ts": "2021-12-03T13:16:08.601226", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:16:28,622 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:16:28,623 - {"event_type": "ACK", "event_ts": "2021-12-03T13:16:28.616904", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:16:48,626 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:16:48,627 - {"event_type": "ACK", "event_ts": "2021-12-03T13:16:48.622008", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}
+2021-12-03 13:17:08,628 - {"event_type": "ACK", "event_desc": "Message Sent to router"}
+2021-12-03 13:17:08,628 - {"event_type": "ACK", "event_ts": "2021-12-03T13:17:08.619610", "client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "payload": {"client_id": "32b51ee0-23d8-4504-bf19-be5af0a426cc", "event_type": "keepalive"}}

@@ -54,7 +54,6 @@ class MapRouter():
         "Map the destination and get the response json"
         desttype = list(self.routes[requesttype])
         response_object = None
-        print(desttype)
         data = json.loads(payload)
         for destination in desttype:
             logging.info(f"Preparing Contract for the destination {destination}")

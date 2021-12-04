@@ -1,14 +1,4 @@
-INFO : root -2021-11-10 01:56:33,890 - Starting the indicator router
-INFO : root -2021-11-10 01:56:33,890 - Starting the Indicator list
-WARNING : root -2021-11-10 01:56:33,924 - Indicator Map is not set for the data
-WARNING : root -2021-11-10 01:56:33,924 - Indicator Map is not set for the data
-WARNING : root -2021-11-10 01:56:33,924 - Indicator Map is not set for the data
-WARNING : root -2021-11-10 01:56:33,924 - Indicator Map is not set for the data
-INFO : root -2021-11-10 01:56:36,084 - Parsing Contract
-INFO : root -2021-11-10 01:56:36,086 - Indicator functions --> ['SMA', 'BBANDS']
-INFO : root -2021-11-10 01:56:36,086 - {1: {'SMA': 'SMA(close ,timeperiod=14)', 'BBANDS': 'BBANDS(close ,timeperiod=5,nbdevup=2,nbdevdn=2,matype=0)'}}
-INFO : root -2021-11-10 01:56:36,087 - Child Thread is being processed for strategy id 1
-INFO : root -2021-11-10 01:56:36,088 - Indicator List {1: {'SMA': 'SMA(close ,timeperiod=14)', 'BBANDS': 'BBANDS(close ,timeperiod=5,nbdevup=2,nbdevdn=2,matype=0)'}}
-INFO : root -2021-11-10 01:56:36,105 - Indicator list Prepared {'SMA': 'SMA(close ,timeperiod=14)'}
-INFO : root -2021-11-10 01:56:36,105 - Indicator list Prepared {'SMA': 'SMA(close ,timeperiod=14)', 'BBANDS': 'BBANDS(close ,timeperiod=5,nbdevup=2,nbdevdn=2,matype=0)'}
-INFO : root -2021-11-10 01:56:36,118 - Started to route the message request to the message handler
+INFO : uvicorn.error -2021-11-25 23:02:10,320 - Started server process [8524]
+INFO : uvicorn.error -2021-11-25 23:02:10,322 - Waiting for application startup.
+INFO : uvicorn.error -2021-11-25 23:02:10,322 - Application startup complete.
+INFO : uvicorn.error -2021-11-25 23:02:10,324 - Uvicorn running on http://127.0.0.1:3000 (Press CTRL+C to quit)

@@ -34,11 +34,12 @@ class EventSocket(tornado.websocket.WebSocketHandler):
             self.clients['client_name'] = client['caller']
             self.clients['payload'] = client['payload']
             self.clients['track_id'] = client['track_id']
+        print(f"{self.clients['client_id']} Connected {self.clients['client_name']}.Tracking ID is {self.clients['track_id']}")
         logging.info(f"{self.clients['client_id']} Connected {self.clients['client_name']}.Tracking ID is {self.clients['track_id']}")
 
     def on_message(self,message):
         "Called when the client provides request to the server.Call the router"
-        logging.info(message)
+        print(message)
         return_code = self.route.routemessage(message=message,id=self.id)
         messagedetails = json.loads(message)
         if messagedetails['event_type'] != "keep_alive":

@@ -8,11 +8,12 @@ from tornado.ioloop import IOLoop, PeriodicCallback
 from tornado import gen
 from tornado.platform.asyncio import AnyThreadEventLoopPolicy
 from tornado.websocket import websocket_connect
+from indicator_response_handler import ResponseHandler
 
-logging.basicConfig(filename="../feed_clients/logs/indicator_subscriber.log",level=logging.INFO,filemode='w',
+logging.basicConfig(filename="../indicator_clients/logs/indicator_response.log",level=logging.INFO,filemode='w',
                     format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
 class Indicator_Listener():
-    "Indicator Listener Class which listens and publishes indicator event to the Event Backbone"
+    "Feed Listener Class which listens and publishes feed event to the Event Backbone"
 
     def __init__(self, url, timeout):
         "Initialize listeners and websockets"
@@ -23,11 +24,12 @@ class Indicator_Listener():
         self.url = url
         self.timeout = timeout
         self.ws = None
-        self.ioloop = IOLoop.current(True).make_current
-        asyncio.set_event_loop(asyncio.new_event_loop())
+        self.ioloop = IOLoop.instance()
         self.connect()
-        PeriodicCallback(self.keep_alive,20000).start() 
+        PeriodicCallback(self.keep_alive,20000).start()
         asyncio.set_event_loop_policy(AnyThreadEventLoopPolicy())
+        self.responsehandler = ResponseHandler()
+
         
         
     @gen.coroutine
@@ -36,12 +38,14 @@ class Indicator_Listener():
         logging.info("Connecting to the websocket server")
         try:
             self.ws = yield websocket_connect(self.url)
+            print(self.ws)
             self.client_id = str(uuid.uuid4())
             metadata = {"event_type":"metadata","event_producer":"Indicator Listener","client_id":self.client_id,"payload":{"client_id":self.client_id, "client_name":"Indicator Listener"}}
             self.ws.write_message(json.dumps(metadata))
             #dict = {"event_type":"stgy_request", "event_producer":"Strategy1","client_id":self.client_id, "payload": {"feeds":{"ticker":"ICICIBANK","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
             #self.ws.write_message(json.dumps(dict))
         except Exception as e:
+            print(e)
             logging.error(e)
         else:
             logging.info("Connected and running")
@@ -51,9 +55,6 @@ class Indicator_Listener():
     def get_client_id(self):
         return self.client_id
 
-    @gen.coroutine
-    def publish_message(self,contract):
-        self.ws.write_message(json.dumps(contract))
     
     @gen.coroutine
     def start_loop(self):
@@ -62,23 +63,19 @@ class Indicator_Listener():
     @gen.coroutine
     def run(self):
         while True:
-            msg = yield self.ws.read_message()
-            if msg is None:
-                logging.info("Connection closed")
-                self.ws = None
-                break
-            else:
-                logging.info(msg)
-                contract = json.loads(msg)
-
+            contract = self.responsehandler.watchchanges()
+            self.ws.write_message(json.dumps(contract))
+                
+            #   FeedSubscriber()
     def keep_alive(self):
         if self.ws is None:
             self.connect()
         else:
-            dict = {"event_type":"keep_alive","event_producer":"Indicator_Listener","client_id":self.client_id,"payload":{"type":"keepalive"}}
+            dict = {"event_type":"keep_alive","event_producer":"Indicator_listener","client_id":self.client_id,"payload":{"type":"keepalive"}}
             self.ws.write_message(json.dumps(dict))
 
 
     
-#if __name__ == '__main__':
- #   client = FeedListener("ws://localhost:8888/eventsocket",5)
+if __name__ == '__main__':
+     client = Indicator_Listener("ws://localhost:8888/eventsocket",5)
+     client.ioloop.start()

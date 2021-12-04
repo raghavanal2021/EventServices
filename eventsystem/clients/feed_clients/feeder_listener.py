@@ -23,11 +23,10 @@ class FeedListener():
         self.url = url
         self.timeout = timeout
         self.ws = None
-        self.ioloop = IOLoop.current()
+        self.ioloop = IOLoop.instance()
         self.connect()
         PeriodicCallback(self.keep_alive,20000).start()
         asyncio.set_event_loop_policy(AnyThreadEventLoopPolicy())
-
         
         
     @gen.coroutine
@@ -43,9 +42,8 @@ class FeedListener():
             #self.ws.write_message(json.dumps(dict))
         except Exception as e:
             logging.error(e)
-        else:
-            logging.info("Connected and running")
-            self.run()
+        logging.info("Connected and running")
+        self.run()
 
     @gen.coroutine
     def get_client_id(self):
@@ -53,6 +51,7 @@ class FeedListener():
 
     @gen.coroutine
     def publish_message(self,contract):
+        print("Publishing  -->" + json.dumps(contract))
         self.ws.write_message(json.dumps(contract))
     
     @gen.coroutine

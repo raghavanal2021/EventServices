@@ -5,8 +5,9 @@ from pymongo import MongoClient
 import time
 import pymongo
 from dotenv import load_dotenv
-from datetime import datetime, time,timedelta
+from datetime import datetime,timedelta
 from model.responsemodel import ResponseModel
+from handler_publishtopic import TopicPublisher
 
 from tornado.gen import sleep
 
@@ -24,6 +25,7 @@ class CandleFeed():
             self._mongoclient = MongoClient(mongohost,mongoport)
             self.mongo_db = self._mongoclient['MinuteData']
             logging.info("Successfully connected to Mongo Server")
+            self._publish = TopicPublisher()
         except Exception as e:
             logging.error(f"Error Connecting to MongoDB {e}")
 
@@ -39,16 +41,26 @@ class CandleFeed():
         for data in _output_list:
             _contract = data
             _contract['timestamp'] = datetime.strftime(_contract['timestamp'],'%Y-%m-%d %H:%M:%S')
-            _contract['ticker'] = ticker
+            _contract['Symbol'] = ticker
             _output = self.prepare_output_format(_contract,client_id,strategy_id,ticker)
             _output_json_list.append(_output)
-    # print(_output_json_list)
+            # print(_output_json_list)
         return _output_json_list
 
     def prepare_output_format(self,data,client_id,strategy_id,ticker):
         "Prepare the output format"
         self._responsemodel = ResponseModel()
         self._responsemodel.event_type = 'data_load'
+        self._responsemodel.event_ts = str(datetime.now().isoformat())
+        self._responsemodel.payload = str(data)
+        self._responsemodel.client_id = client_id
+        self._responsemodel.strategy_id = strategy_id
+        return {"event_type":self._responsemodel.event_type,"strategy_id":self._responsemodel.strategy_id,"event_ts":self._responsemodel.event_ts,"client_id":self._responsemodel.client_id,"payload":self._responsemodel.payload}
+
+    def prepare_priceoutput_format(self,data,client_id,strategy_id,ticker):
+        "Prepare the output format"
+        self._responsemodel = ResponseModel()
+        self._responsemodel.event_type = 'frontend'
         self._responsemodel.event_ts = str(datetime.now().isoformat())
         self._responsemodel.payload = str(data)
         self._responsemodel.client_id = client_id

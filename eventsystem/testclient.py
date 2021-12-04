@@ -44,8 +44,13 @@ class TestClient():
                                   {"indicator_name":"BBANDS","params":{"bars":{"close":"close"},"timeperiod":5,"nbdevup":2,"nbdevdn":2,"matype":0}}
                                  ]}}
             self.ws.write_message(json.dumps(dict))
-            #dict = {"event_type":"stgy_request", "event_producer":"Strategy2","strategy_id":2,"client_id":str(uuid.uuid4()), "payload": {"feeds":{"ticker":"MOTHERSUMI","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},"indicators":"None"}}
-            #self.ws.write_message(json.dumps(dict))
+            dict = {"event_type":"stgy_request", "event_producer":"Strategy2","strategy_id":2,
+                    "client_id":str(uuid.uuid4()), "payload": {
+                    "feeds":{"ticker":"MOTHERSUMI","period":"5T","start_date":"2021-01-01 09:00:00","type":"candles"},
+                    "indicators":[{"indicator_name":"SMA","params":{"bars":{"close":"close"},"timeperiod":14}},
+                                  {"indicator_name":"BBANDS","params":{"bars":{"close":"close"},"timeperiod":5,"nbdevup":2,"nbdevdn":2,"matype":0}}
+                                 ]}}
+            self.ws.write_message(json.dumps(dict))
         except Exception as e:
             logging.error(e)
         else:

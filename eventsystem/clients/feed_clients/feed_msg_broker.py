@@ -50,6 +50,7 @@ async def main(loop):
                 incoming_message = await queue.get()
                 message = incoming_message.body
                 incoming_message.ack() 
+                print(message)
                 start_thread(message)
             except asyncio.QueueEmpty:
                 pass

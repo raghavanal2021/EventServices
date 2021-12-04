@@ -18,6 +18,7 @@ class Router():
     def routemessage(self,message,id):
         "Route the message to the appropriate publisher. JSON contract is {type:requesttype, caller:callerid, payload}"
         json_message = message
+        print(f"Routing Message --> {message} ")
         msg_object = json.loads(json_message)    
         # if msg_object['event_type'] != "keep_alive":
         dest_contract = self.map_object.get_destination_contract(msg_object,id)

@@ -6,7 +6,7 @@ from handlers.handler_publishtopic import TopicPublisher
 import json,os
 import logging
 
-logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
+logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(filename)s -%(asctime)s - %(message)s')
 class IndicatorRequestHandler(HandlerInterface):
 
     def __init__(self):
@@ -17,7 +17,6 @@ class IndicatorRequestHandler(HandlerInterface):
         self._topicpublisher = TopicPublisher()
 
     def deserialize_contract(self,contract):
-        print(f"Indicator Contract {contract}")
         parse_contract = json.loads(json.dumps(contract))
         client_id = parse_contract['client_id']
         event_type = parse_contract['event_type']

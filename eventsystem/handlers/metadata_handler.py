@@ -8,7 +8,7 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 import json
 
-logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
+logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(filename)s -%(asctime)s - %(message)s')
 load_dotenv()
 class MetadataHandler():
 

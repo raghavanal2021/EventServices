@@ -6,7 +6,7 @@ from handlers.handler_publishtopic import TopicPublisher
 import json,os
 import logging
 
-logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
+logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(filename)s -%(asctime)s - %(message)s')
 class StrategyRequestHandler(HandlerInterface):
 
     def __init__(self):
@@ -59,7 +59,6 @@ class StrategyRequestHandler(HandlerInterface):
             
             _feed_serialized_contract = self.serialize_contract(self._feed_contract_model)
             _indicators_serialized_contract = self.serialize_contract(self._indicators_contract_model)
-
             self._topicpublisher.publish_topic(_feed_serialized_contract,"feeds")
             self._topicpublisher.publish_topic(_indicators_serialized_contract,"indicators")
             return _feed_serialized_contract
@@ -69,5 +68,4 @@ class StrategyRequestHandler(HandlerInterface):
 
         output_contract = {"event_type":contract.event_type,"strategy_id":contract.strategy_id, "event_ts":contract.event_ts,
                             "client_id":contract.client_id,"payload":contract.payload}
-        print(json.dumps(output_contract))
         return json.dumps(output_contract)
