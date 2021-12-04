@@ -1,0 +1,30 @@
+INFO : root -2021-11-24 03:01:45,650 - Connecting to the websocket server
+ERROR : tornado.application -2021-11-24 03:01:45,651 - Exception in callback <bound method Router.keep_alive of <__main__.Router object at 0x000002F8B1400AC0>>
+Traceback (most recent call last):
+  File "C:\Users\hp\anaconda3\envs\TradeDev\lib\site-packages\tornado\ioloop.py", line 905, in _run
+    return self.callback()
+  File "routetoserver.py", line 47, in keep_alive
+    self.connect()
+  File "routetoserver.py", line 39, in connect
+    self.channel.start_consuming()
+AttributeError: 'Router' object has no attribute 'channel'
+INFO : root -2021-11-24 03:02:05,654 - Connecting to the websocket server
+ERROR : tornado.application -2021-11-24 03:02:05,654 - Exception in callback <bound method Router.keep_alive of <__main__.Router object at 0x000002F8B1400AC0>>
+Traceback (most recent call last):
+  File "C:\Users\hp\anaconda3\envs\TradeDev\lib\site-packages\tornado\ioloop.py", line 905, in _run
+    return self.callback()
+  File "routetoserver.py", line 47, in keep_alive
+    self.connect()
+  File "routetoserver.py", line 39, in connect
+    self.channel.start_consuming()
+AttributeError: 'Router' object has no attribute 'channel'
+INFO : root -2021-11-24 03:02:25,646 - Connecting to the websocket server
+ERROR : tornado.application -2021-11-24 03:02:25,646 - Exception in callback <bound method Router.keep_alive of <__main__.Router object at 0x000002F8B1400AC0>>
+Traceback (most recent call last):
+  File "C:\Users\hp\anaconda3\envs\TradeDev\lib\site-packages\tornado\ioloop.py", line 905, in _run
+    return self.callback()
+  File "routetoserver.py", line 47, in keep_alive
+    self.connect()
+  File "routetoserver.py", line 39, in connect
+    self.channel.start_consuming()
+AttributeError: 'Router' object has no attribute 'channel'

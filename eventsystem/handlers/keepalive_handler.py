@@ -6,7 +6,7 @@ from models.responsemodel import ResponseModel
 from datetime import datetime
 
 
-logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(name)s -%(asctime)s - %(message)s')
+logging.basicConfig(filename="./logs/eventbackbone.log",level=os.getenv("loglevel"),filemode='w',format='%(levelname)s : %(filename)s -%(asctime)s - %(message)s')
 class KeepAliveHandler():
     "This class will handle all keep alive events generated from the clients"
 

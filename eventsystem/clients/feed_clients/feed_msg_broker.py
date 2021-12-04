@@ -8,7 +8,6 @@ from aio_pika.pool import T, Pool
 from aio_pika.robust_connection import connect_robust
 from dotenv import load_dotenv
 from router import MessageRouter
-from message_subscriber import MessageSubscriber
 import pyfiglet
 import threading
 
@@ -48,13 +47,14 @@ async def main(loop):
     "Receive the message"
     while True:
             try:
-                incoming_message = await queue.get(timeout=5)
+                incoming_message = await queue.get()
                 message = incoming_message.body
                 incoming_message.ack() 
-                startThread(message)
+                print(message)
+                start_thread(message)
             except asyncio.QueueEmpty:
                 pass
-def startThread(message):
+def start_thread(message):
       print("Starting Thread")
       messagerouter = MessageRouter()
       t = threading.Thread(target=messagerouter.route_message,args=[message],daemon=True)

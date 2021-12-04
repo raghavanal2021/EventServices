@@ -1,0 +1,4 @@
+INFO : uvicorn.error -2021-11-25 23:02:10,320 - Started server process [8524]
+INFO : uvicorn.error -2021-11-25 23:02:10,322 - Waiting for application startup.
+INFO : uvicorn.error -2021-11-25 23:02:10,322 - Application startup complete.
+INFO : uvicorn.error -2021-11-25 23:02:10,324 - Uvicorn running on http://127.0.0.1:3000 (Press CTRL+C to quit)
